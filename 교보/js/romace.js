@@ -1,6 +1,7 @@
 $(function () {
    
 
+    //베스트 셀러 슬라이드 구현
     const $item =$(".item1").width();
     $(".best-seller .btn-area .right").click(function () {
         $(".rank-slide").stop().animate({left: "-100%"}, 500);
@@ -10,10 +11,12 @@ $(function () {
        $(".rank-slide").stop().animate({left: 0}, 500);
     });
     
+    //베스트 셀러 슬라이드 버튼
     $(".best-seller .btn-area button").click(function () {
         $(this).removeClass("on").siblings().addClass("on");
     })
 
+    //베스트 셀러 탭버튼
     $(".best-seller .tabmenu span").click(function () {
 
         $(".rank-slide").css("display","none");
@@ -28,6 +31,7 @@ $(function () {
     });
 
 
+    //메인 배너 슬릭
     $(".main-banner .slider").slick({
         dots: true,
         arrows: true,
@@ -47,12 +51,15 @@ $(function () {
         }]
    });
 
+   //슬라이드 배너 슬릭
    $(".slide-banner").slick({
         arrows:false,
         autoplay:true,
         autoplaySpeed: 2000,
    });
 
+
+   //신간도서 슬라이드 반응형에서 슬릭 해제
    var slider = $(".new-slide .new-slider");  	
    var slickOptions ={ 		
                         arrows:true,

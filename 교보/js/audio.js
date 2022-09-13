@@ -1,6 +1,6 @@
 $(function () {
    
-    
+    //메인 슬라이드
     $(".slider").slick({
         dots: true,
         arrows: false,

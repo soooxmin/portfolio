@@ -1,6 +1,6 @@
 $(function () {
     
-    
+    //오늘의 책 탭버튼
     $(".today-book .title .btn-area span").click(function () {
         let $this = $(this);
         let itemIndex = $this.index();
@@ -18,12 +18,14 @@ $(function () {
     });
 
 
+    //슬라이드 배너 슬릭
     $(".slide-banner").slick({
         arrows:false,
         autoplay:true,
         autoplaySpeed: 2000,
     });
 
+    //신간도서 반응형 슬릭 해제
     var slider = $(".new-slide .new-slider");  	
     var slickOptions = { 		
                             arrows:true,

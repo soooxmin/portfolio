@@ -1,12 +1,13 @@
 $(function () {
    
-    
+    //슬라이드 배너 슬릭
     $(".slide-banner").slick({
         arrows:false,
         autoplay:true,
         autoplaySpeed: 1500,
     });
 
+    //별점
     $(".review .stars .iconify").click(function () {
 
         $(this).addClass("active").prevAll().addClass("active").nextAll();

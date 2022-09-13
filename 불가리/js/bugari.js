@@ -25,7 +25,7 @@ $(function () {
 
 
 
-    //이미지 슬라이더 
+    //이미지 슬라이더 이닛,에프터 이벤트
     $(".img-slider").on("init",function (event,slick) {
         
         $(".txt-con .box").eq(slick.currentSlide).addClass("active");
@@ -63,6 +63,7 @@ $(function () {
         });
     });
  
+    //이미지 슬라이더 슬릭
     $(".img-slider").slick({
         dots: false,
         arrows: true,
@@ -75,21 +76,19 @@ $(function () {
     });
 
 
-   
-   
+   //위로가기 버튼
     $(".top-btn").click(function () {
         scrollTop = $(window).scrollTop();
        $("html,body").animate({scrollTop: 0}, '300');
     });
 
-   
-   
+   //하트 누르기
     $(".new .xi-heart").click(function () {
        $(this).toggleClass("active"); 
     });
 
   
-  
+  //마우스 호버시 원형 이벤트
     $(".new .img").mouseenter(function () {
         $(".mouse-pointer").css({
              backgroundColor : "#a44e048d",
@@ -119,7 +118,7 @@ $(function () {
     });
 
    
-   
+   //마우스 따라다니는원
     $(window).on("mousemove", function (event) {
         
         const mousex = event.clientX;
@@ -133,6 +132,7 @@ $(function () {
         })
     });
 
+    //페이지별 오프셋
     let winH = $(window).height();
     let sec2Top = $(".high-jewelry").offset().top;
     let sec3Top = $(".jewelry").offset().top;
@@ -140,10 +140,12 @@ $(function () {
     let sec6Top = $(".wedding").offset().top;
     let videoTop = $(".fixVideo-wrap").offset().top;
    
+    //페이지 스크롤 이벤트
     $(window).scroll(function () {
        
         scrollTop = $(this).scrollTop();
         
+        //전체페이지 스크롤 이벤트
         if(scrollTop > sec3Top){
             $(".top-btn").css({
                 display : "block",
@@ -197,6 +199,7 @@ $(function () {
         }
 
 
+        //비디오 픽스
         if(scrollTop > sec5Top -  winH*0.1){
 
             if ( scrollTop > videoTop && scrollTop < sec6Top ) {
@@ -209,7 +212,7 @@ $(function () {
 
         }
 
-
+        //비디오 픽스한뒤 상품 스크롤이벤트
         if (scrollTop > videoTop){
 
 

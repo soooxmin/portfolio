@@ -1,12 +1,14 @@
 $(function () {
 
 
+    //뷰어 슬라이드 이닛,에프터체인지
     $(".viewer-slider").on("init", function (event, slick) {
         $(".viewer-text .txt-item").eq(slick.currentSlide).addClass("active");
     }).on("afterChange", function (event, slick, currentSlide, nextSlide) {
         $(".viewer-text .txt-item").removeClass("active").eq(currentSlide).addClass("active");
     });
 
+    //뷰어 슬릭
     $(".viewer-slider").slick({
         dots: true,
         arrows: true,
@@ -27,12 +29,14 @@ $(function () {
             }]
     });
 
+    //무료도서 이닛,에프터체인지
     $(".free-book .slide-area").on("init", function (event, slick) {
         $(".free-book .book-desc .name").eq(slick.currentSlide).addClass("active");
     }).on("afterChange", function (event, slick, currentSlide, nextSlide) {
         $(".free-book .book-desc .name").removeClass("active").eq(currentSlide).addClass("active");
     })
 
+    //무료도서 슬릭
     $(".free-book .slide-area").slick({
         arrows: true,
         prevArrow: $(".free-book .iconify.leftbt"),
@@ -55,6 +59,7 @@ $(function () {
             }]
     })
 
+    //이북리더기 세로 마우스 스크롤
     $(".vertical-slide .slide-con").on('wheel', function (e) {
         e.preventDefault();
 
@@ -65,6 +70,7 @@ $(function () {
         }
     });
 
+    //이북리더기 이닛,비포체인지
     $(".vertical-slide .slide-con").on("init", function (event, slick) {
         updateSlide_count(slick);
         $(".progress").css({height: (1 / $totalCount) * 100 + "%",});
@@ -72,8 +78,9 @@ $(function () {
         updateSlide_count(slick);
         // console.log(nextSlide / $totalCount);
         $(".progress").css({top: (nextSlide / $totalCount) * 100 + "%",});
-    })
+    });
 
+    //이북리더기 슬릭
     $(".vertical-slide .slide-con").slick({
         vertical: true,
         arrows: false,
@@ -93,6 +100,7 @@ $(function () {
             }]
     });
 
+    //도서분류 탭메뉴
     $(".book-tabMenu .btn-area button").click(function () {
         let $this = $(this);
         let itemIndex = $this.index();
@@ -108,6 +116,7 @@ $(function () {
     });
 
 
+    //슬리이드 넘버 카운트 함수
     function updateSlide_count(event, next) {
         $totalCount = event.slideCount;
         $current = event.currentSlide;
@@ -116,6 +125,7 @@ $(function () {
     }
 
 
+    // 페이지별 오프셋 변수
     let visual_offset = parseInt($(".visual").offset().top);
     let char_offset = parseInt($(".character").offset().top);
     let manybooks_offset = parseInt($(".many-books").offset().top);
@@ -126,10 +136,12 @@ $(function () {
     let reader_offset = parseInt($(".reader").offset().top);
 
 
+    //윈헤이트
     const winHeight = $(window).innerHeight();
     console.log(winHeight);
 
 
+    //스크롤 이벤트
     $(window).scroll(function () {
 
         const pos = parseInt($(this).scrollTop());

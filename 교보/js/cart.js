@@ -2,7 +2,7 @@ $(function() {
 
     productCount_func()
     
-    
+    //전체선택 버튼 체크시
     $(".chk-all input").click(function () {
        
         if($(this).prop("checked")){
@@ -10,11 +10,12 @@ $(function() {
         }else{
             $(".item").find("input[type=checkbox]").prop("checked",false);
         }
-        productCount_func();
-        // totalPrice_func($am1, $am2, $am3); 
+        productCount_func(); 
         amountPrice_func();      
     });
 
+
+    //체크버튼 체크시 전체선택버튼 변화
     $(".item input[type=checkbox]").click(function () {
         
         
@@ -28,6 +29,7 @@ $(function() {
 
     });
     
+    //아이템 수량 변경
     $(".item .box .countBox input[type=button]").click(function () {
        
         const $this = $(this);
@@ -46,11 +48,13 @@ $(function() {
 
 //---------------------------------------------------------------------------------------------
     
+    //상품 갯수 계산 함수
     function productCount_func() {
         let $product = $(".cartlist ul").find("input[type=checkbox]:checked");
         $(".total-cart .calc-area .counting").text($product.length);
     }
     
+    //상품 총 가격계산 함수
     function amountPrice_func() {
         const $price1 = $(".item1").find(".price").text().replace(/[^0-9]/g, "");
         const $val1 = $(".item1").find("input[type=text]").val();
@@ -69,10 +73,10 @@ $(function() {
         totalPrice_func($am1, $am2, $am3);       
     }
 
+    //전체 합계 계산 함수
     function totalPrice_func(a,b,c) {
 
         let $totalsum;
-        // let $delivery = $(".calc-area .deli-price").text().replace(/[^0-9]/g,"");
         let $delivery;
         let $sale;
 

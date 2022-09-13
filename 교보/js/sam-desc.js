@@ -1,5 +1,6 @@
 $(function () {
    
+    //샘 메인 탭메뉴
     $(".tab-menu div").click(function () {
        
         $(this).addClass("tab").siblings().removeClass("tab");
@@ -12,6 +13,7 @@ $(function () {
 
     });
 
+    //스크롤탑 변수
     let mainbox_offset = parseInt($(".mainbox").offset().top);
     let desc_offset = parseInt($(".desc").offset().top);
     let reading_offset = parseInt($(".reading").offset().top);
@@ -21,6 +23,7 @@ $(function () {
 
     const winHeight = $(window).innerHeight();
 
+    //스크롤 이벤트
     $(window).scroll(function () {
         
         const pos = $(this).scrollTop();
