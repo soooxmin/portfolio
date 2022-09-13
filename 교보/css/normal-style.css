@@ -1,0 +1,837 @@
+.main{}
+
+.main section .inner .title{
+    width: 100%;
+    height: 70px;
+}
+.main section .title strong {
+    font-size: 26px;
+    color: #003477;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 57px;
+}
+
+/*메인배너*/
+.main .main-banner{
+    position: relative;
+    padding-top: 80px;
+}
+.main-banner .iconify{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    cursor: pointer;
+}
+.main-banner .iconify.left{
+    left: 80px;
+}
+.main-banner .iconify.right{
+    right: 80px;
+}
+.main-banner .slider{
+    width: 100%;
+    height: 100%;
+}
+.main-banner .slider .item{
+    width: 100%;
+    height: 100%;
+}
+.main-banner .slider .item img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner .slider .slick-dots{
+    position: absolute;
+    left: 360px;
+    bottom: 50px;
+    display: flex;
+}
+.main-banner .slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin-right: 10px;
+}
+.main-banner .slider .slick-dots li.slick-active{
+    background-color: #3B90FF;
+}
+.main-banner .slider .slick-dots li button{
+    display: none;
+}
+
+/* 오늘의 책*/
+.main .today-book{}
+.today-book .inner{
+    padding: 75px 160px 95px;
+}
+.today-book .contents{
+    width: 100%;
+    margin-top: 26px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.today-book .contents .box{
+    width: 23%;
+    height: 435px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.today-book .contents .box .img-area{
+    position: relative;
+    width: 100%;
+    height:80%;
+}
+.today-book .contents .box1 .img-area{
+    background: #1e89ce;
+}
+.today-book .contents .box2 .img-area{
+    background: #EEABBC;
+}
+.today-book .contents .box3 .img-area{
+    background: #241C19;
+}
+.today-book .contents .box4 .img-area{
+    background: #3744AC;
+}
+.today-book .contents .box .img-area div{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width:60%;
+    height: 300px;
+}
+.today-book .contents .box .img-area img{
+    width: 100%;
+    height: 100%;
+}
+.today-book .contents .box .text-area{
+    font-family: "NanumBarunGothic",sans-serif;
+    text-align: center;
+}
+.today-book .contents .box .text-area p{
+    margin: 21px 0 15px;
+    color: #787878;
+    font-weight: 300;
+}
+.today-book .contents .box .text-area strong{
+    color: #5668AE;
+    font-weight: 500;
+}
+
+
+/*샘배너*/
+.main .sam-banner{}
+.main .sam-banner .inner{}
+.main .sam-banner .inner .slide-banner{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.main .sam-banner .inner .slide-banner .item{
+    width: 100%;
+    height: 100%;
+}
+.main .sam-banner .inner .slide-banner .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/*베스트셀러*/
+.main .best-seller{
+    position: relative;
+}
+.best-seller .inner{
+    padding: 95px 160px 55px ;
+}
+.best-seller .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-seller .title .tabmenu{
+    padding-right: 30px;
+}
+.best-seller .title .tabmenu span{
+    display: inline-block;
+    padding: 7px 15px;
+    border: 2px solid #9189F5;
+    border-radius: 20px;
+    color: #5B4DFB;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.best-seller .title .tabmenu span.active{
+    background-color: #5B4DFB;
+    color: #fff;
+    border-color: #5B4DFB;
+}
+
+.best-seller .btn-area{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    height: 580px;
+}
+.best-seller .btn-area button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index:100;
+    background-color: transparent;
+}
+.best-seller .btn-area .left{left: 0;}
+.best-seller .btn-area .right{right: 0;}
+
+.best-seller .btn-area .left,
+.best-seller .btn-area .right{
+    opacity: 0;
+    visibility: hidden;
+}
+.best-seller .btn-area .left.on,
+.best-seller .btn-area .right.on{
+    opacity: 1;
+    visibility: visible;
+}
+
+.best-seller .ranking-box{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.best-seller .ranking-box .rank-slide{
+    display: none;
+}
+
+/*--------------------------------------------------------*/
+.best-seller .ranking-box .rank-slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+}
+.best-seller .ranking-box .rank-slide.day{/*플렉스로 none해제*/
+    display: flex;
+}
+.best-seller .ranking-box .rank-slide .item{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.best-seller .ranking-box .rank-slide .item ul{
+    width: 400px;
+    height: 500px;
+}
+.best-seller .ranking-box .rank-slide .item ul li{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 140px;
+    margin-bottom: 40px;
+}
+.best-seller .ranking-box .rank-slide .item ul li:last-child{
+    margin-bottom: 0;
+}
+.best-seller .ranking-box .rank-slide .item ul li em{
+    font-size: 30px;
+    margin-left: 40px;
+}
+.best-seller .ranking-box .rank-slide .item ul li img:nth-of-type(1){
+    width: 100px;
+    height: 140px;
+    margin: 0 37px 0 47px;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text{
+    width: 150px;
+    height: 90px;
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text strong{
+    font-size: 18px;
+    font-weight: 300;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text p{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/*키워드*/
+.main .keyword{
+    background-color: #f6f6f6;
+}
+.keyword .inner{
+    padding: 40px 160px 100px;
+}
+.keyword .box{
+    width: 80%;
+    margin: 30px auto 0;
+}
+.keyword .box span{
+    display: inline-block;
+    font-family: "NanumBarunGothic",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #3eb134;
+    padding: 10px 30px;
+    border: 2px solid #3eb134;
+    border-radius: 30px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.keyword .box span:last-child{
+    margin-right: 0;
+}
+.keyword .box span:hover{
+    background-color: #3eb134;
+    color: #fff;
+}
+
+/*신간도서*/
+.main .new{}
+.new .inner{
+    padding: 30px 160px 95px;
+}
+.new .new-slide{
+    position: relative;
+}
+.new .new-slide .iconify{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    z-index: 20;
+    cursor: pointer;
+}
+.new .new-slide .iconify.left{
+    left: -70px;
+    display: none;
+}
+.new .new-slide .iconify.right{
+    right: -70px;
+}
+.new .new-slide .new-slider{
+    margin-top: 50px;
+    height: 470px;
+}
+.new .new-slide .new-slider .slick-track{
+    height: 470px;
+    margin-top: 5px;
+}
+.new .new-slide .new-slider .item{
+    width: 280px;
+    height: 460px;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+.new .new-slide .new-slider .item img{
+    width: 280px;
+    height: 400px;
+    margin: 0 auto 5px;
+}
+.new .new-slide .new-slider .item strong{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 7px
+}
+.new .new-slide .new-slider .item p{
+    margin-top: 12px;
+    color: #464646;
+}
+
+/*지금최고*/
+.main .nowBest{
+    background-color: #E7EDFF;
+}
+.nowBest .inner{
+    padding: 40px 160px 50px;
+}
+.main .nowBest .inner .title{
+    width: 100%;
+}
+.main .nowBest .inner .title strong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.main .nowBest .inner .title strong::before,
+.main .nowBest .inner .title strong::after{
+    content: "";
+    display:block;
+    width: 40%;
+    height: 10px;
+    border-top: 1px solid rgba(0,32,119,0.75);
+    border-bottom: 1px solid rgba(0,32,119,0.75);
+}
+.main .nowBest .inner .title strong::before{margin-right: 47px;}
+.main .nowBest .inner .title strong::after{margin-left: 47px;}
+
+.nowBest ul{
+    display: flex;
+    width: 1560px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.nowBest ul li{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: orange;
+    overflow: hidden;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.nowBest ul li:last-child{
+    margin-right: 0;
+}
+.nowBest ul li::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+.nowBest ul li img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+.nowBest ul li strong{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 220px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    z-index: 20;
+}
+.nowBest ul li:hover img{
+    transform: scale(1.3);
+}
+
+/*엠디 이슈*/
+.main .issue{}
+.issue .inner{
+    padding: 75px 160px 110px;
+}
+.issue .wrap{
+    width: auto;
+    overflow: scroll hidden;
+    padding-bottom: 20px;
+}
+.issue ul{
+    display: flex;
+    justify-content: space-between;
+    width: 1560px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.issue ul li{
+    width: 280px;
+    height: 470px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: "NanumBarunGothic",sans-serif;
+}
+.issue ul li img{
+    width: 280px;
+    height: 400px;
+}
+.issue ul li strong{
+    margin-top: 7px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.issue ul li p{
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+/*--------------------*/
+@media (max-width : 1600px) {
+    .nowBest ul li {
+        width: 200px;
+        height: 200px;
+    }
+}
+/*------------------------------------*/
+@media (max-width : 1380px) {
+    .today-book .inner {
+        padding: 75px 160px 95px;
+    }
+
+    .today-book .contents .box {
+        height: 330px;
+    }
+
+    .today-book .contents .box .text-area p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .today-book .contents .box .img-area div {
+        height: 200px;
+    }
+
+}
+/*-------------------------------*/
+@media (max-width : 1350px) {
+    .main .nowBest .inner .title strong {
+        font-size: 20px;
+    }
+
+    .main .nowBest .inner .title strong::before {
+        margin-right: 20px;
+    }
+
+    .main .nowBest .inner .title strong::after {
+        margin-left: 20px;
+    }
+
+    .nowBest ul li {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nowBest ul li strong {
+        font-size: 18px;
+    }
+
+}
+/*--------------------------------------------------------*/
+
+@media(max-width : 1330px) {
+    .best-seller .ranking-box {
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+}
+/*------------------------------------------------*/
+
+@media (max-width : 768px){
+    .layout{
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+    .main section .inner {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .main section .inner .title{
+        width: 100%;
+        height: 30px;
+    }
+    .main section .title strong {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .main .main-banner{
+        padding-top:50px;
+    }
+    .main-banner .iconify{
+        width: 20px;
+        height: 20px;
+        top: 60%;
+    }
+    .main-banner .iconify.left {
+        left: 2vh;
+    }
+    .main-banner .iconify.right {
+        right: 2vh;
+    }
+    .main-banner .slider .slick-dots{
+        left: 19vw;
+        bottom: 2vh;
+    }
+    .main-banner .slider .slick-dots li{
+        width: 4px;
+        height: 4px;
+        margin-right: 5px;
+    }
+
+    .today-book {
+        display: none;
+    }
+    .main .sam-banner {
+        display: none;
+    }
+    .best-seller .title .tabmenu {
+        padding-right: 0;
+    }
+    .best-seller .title .tabmenu span {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .best-seller .btn-area{
+        display: none;
+    }
+
+    .best-seller .ranking-box {
+        width: auto;
+        height: 320px;
+        white-space: nowrap;
+        overflow: scroll hidden;
+        padding-bottom: 20px;
+    }
+    
+ /*--------------------------------------------------------*/
+    .best-seller .ranking-box .rank-slide .item {
+        width: 900px;
+        height: 320px;
+        justify-content: flex-start;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul {
+        width: 300px;
+        height: 320px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li {
+        justify-content: space-around;
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+       
+    .best-seller .ranking-box .rank-slide .item ul li em {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li img:nth-of-type(1) {
+        width: 50px;
+        height: 70px;
+        margin: 0 10px 0 15px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text strong {
+        font-size: 16px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+/*--------------------------------------------------------*/
+    .keyword .box{
+        width: 100%;
+        font-size: 0;
+    }
+    .keyword .box span{
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 2px;
+    }
+    
+    .new .new-slide .iconify{
+        display: none;
+    }
+    .new .new-slide .new-slider{
+        margin-top: 20px;
+        height: 240px;
+    }
+    .new .new-slide .new-slider .slick-list,
+    .new .new-slide .new-slider .slick-track{
+        height: 100%;
+    }
+    .new .new-slide .new-slider .item{
+        width: 120px;
+        height: 225px;
+        text-align: left;
+        margin-right: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;     
+    }
+    .new .new-slide .new-slider .item img{
+        width: 120px;
+        height: 180px;
+    }
+    .new .new-slide .new-slider .item strong{
+        font-size: 14px;
+        margin-top: 3px;
+        padding-left: 5px;
+    }
+    .new .new-slide .new-slider .item p{
+        font-size: 12px;
+        margin-top:5px;
+        padding-left: 5px;
+    }
+
+    .main .nowBest .inner .title strong::before,
+    .main .nowBest .inner .title strong::after{
+        width: 35%;
+        height: 5px;
+    }
+    .main .nowBest .inner .title strong::before{margin-right: 10px;}
+    .main .nowBest .inner .title strong::after{margin-left: 10px;}
+    
+    .nowBest ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-left:0;
+    }
+    .nowBest ul li{
+        width: 30%;
+        height: 200px;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+    .nowBest ul li strong{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .issue .wrap{
+        width: auto;
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    .issue ul{
+        /* flex-wrap: wrap; */
+        width: 700px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .issue ul li{
+        width: 120px;
+        height: 225px;
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .issue ul li img{
+        display: block;
+        width: 120px;
+        height: 180px;
+    }
+    .issue ul li strong{
+        margin-top: 10px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .issue ul li p{
+        font-size: 12px;
+        margin-top: 6px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 600px){
+    .nowBest ul li{
+        height: 160px;
+    }
+}
+@media (max-width: 490px){
+    .nowBest ul li{
+        height: 130px;
+    }
+}
+@media (max-width: 400px){
+    .nowBest ul li{
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

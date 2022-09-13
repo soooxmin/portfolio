@@ -1,0 +1,724 @@
+
+.main .maindesc{
+    padding-top: 70px;
+}
+.maindesc .inner{
+    padding:37px 187px 52px;
+}
+
+.maindesc .title {
+    width: 1540px;
+    height: 70px;
+}
+.maindesc .title strong {
+    font-size: 26px;
+    color: #003477;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 57px;
+}
+
+.maindesc .wrap{
+    display: flex;
+    justify-content: center;
+    width: 1540px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.maindesc .wrap .left{
+    width: 480px;
+    height: 600px;
+}
+.maindesc .wrap .left img{
+    width: 350px;
+    margin-left: 65px;
+    margin-top: 30px;
+}
+.maindesc .wrap .left button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #cecece;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+.maindesc .wrap .left button:hover{
+    background-color: #2b2b2b;
+}
+
+.maindesc .wrap .right{
+    width: 842px;
+    height: 600px;
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+}
+.maindesc .wrap .right .inner{
+    padding: 25px 30px;
+}
+.maindesc .wrap .right .book-detail{}
+.maindesc .wrap .right .book-detail ul{
+    display: flex;
+}
+.maindesc .wrap .right .book-detail ul li{
+    position: relative;
+}
+.maindesc .wrap .right .book-detail ul li:last-child::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+.maindesc .wrap .right .book-detail h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 34px 0 26px;
+}
+.maindesc .wrap .right .book-detail .stars-wrap{
+    display:  flex;
+    align-items: center;
+}
+.maindesc .wrap .right .book-detail .stars-wrap .stars{}
+.maindesc .wrap .right .book-detail .stars-wrap .stars .iconify{
+    font-size: 30px;
+}
+.maindesc .wrap .right .book-detail .stars-wrap p{
+    font-size: 20px;
+    color: #3B90FF;
+    margin-left: 10px;
+    font-weight: 300;
+}
+.maindesc .wrap .right .book-detail .stars-wrap p em{
+    font-size: 16px;
+    color: #828384;
+}
+.maindesc .wrap .right .book-detail p{
+    margin: 13px 0 23px;
+}
+
+.maindesc .wrap .right .horizen-line{
+    width: 800px;
+    height: 1px;
+    background-color: #BBBABA;
+}
+
+.maindesc .wrap .right .price{
+    margin: 52px 0 71px;
+    display: flex;
+}
+.maindesc .wrap .right .price .price-title{
+    width: 240px;
+    height: 148px;
+    background-color: #eee;
+    border: 1px solid #DAD9D9;
+    border-left: none;
+}
+.maindesc .wrap .right .price .price-title p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 148px;
+}
+.maindesc .wrap .right .price .price-detail{
+    width: 409px;
+    height: 148px;
+    padding: 20px 49px;
+    box-sizing: border-box;
+    border: 1px solid #DAD9D9;
+    border-right: none;
+    border-left: none;
+}
+.maindesc .wrap .right .price .price-detail div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.maindesc .wrap .right .price .price-detail div span{
+    font-size: 18px;
+    color: #555;
+}
+.maindesc .wrap .right .price .price-detail div strong{
+    font-size: 22px;
+    font-weight: 300;
+    color: #222;
+}
+.maindesc .wrap .right .price .price-detail div em{
+    font-size: 22px;
+    color: #5B4DFB;
+}
+
+.maindesc .wrap .right .buttons{}
+.maindesc .wrap .right .buttons button{
+    font-size: 24px;
+    color: #fff;
+    border-radius: 3px;
+    vertical-align: middle;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.maindesc .wrap .right .buttons button:nth-child(1){
+    padding: 18px 65px;
+    background-color: #5B4DFB;
+}
+.maindesc .wrap .right .buttons button:nth-child(2){
+    padding: 18px 65px;
+    background-color: #222;
+}
+.maindesc .wrap .right .buttons button:nth-child(3){
+    border: 1px solid #C8BEBE;
+    padding: 10px;
+    margin-right: 10px;
+}
+.maindesc .wrap .right .buttons button:nth-child(4){
+    border: 1px solid #C8BEBE;
+    padding: 10px;
+    margin-right: 0;
+}
+.maindesc .wrap .right .buttons button .iconify{
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.maindesc .wrap .right .buttons button:hover{
+    background-color: #5668AE;
+    color: #fff;    
+}
+
+/*샘배너*/
+.main .sam-banner{
+    margin: 53px 0 119px;
+}
+.main .sam-banner .inner{}
+.main .sam-banner .inner .slide-banner{
+    width: 1920px;
+    height: 200px;
+    cursor: pointer;
+}
+.main .sam-banner .inner .slide-banner .item{
+    width: 100%;
+    height: 100%;
+}
+.main .sam-banner .inner .slide-banner .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/*subdesc*/
+.main .subdesc{}
+.subdesc .inner{
+    padding: 0 334px;
+}
+.subdesc .box{
+    display: flex;
+    width: 1252px;
+}
+.subdesc .box strong{
+    font-size: 24px;
+    font-weight: 300;
+}
+.subdesc .box .vertical-line{
+    width: 2px;
+    background-color: #d9d9d9;
+}
+.subdesc .box .txt-area{
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+    width: 925px;
+}
+.subdesc .box .txt-area p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.subdesc .box .txt-area p em{
+    font-weight: 500;
+    font-size: 20px;
+}
+.subdesc .box .txt-area .video-area{
+    position: relative;
+    width: 731px;
+    height: 405px;
+    margin: 30px 0;
+}
+.subdesc .box .txt-area .video-area iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.subdesc .box .txt-area span{
+    color: #555;
+    line-height: 1.2;
+}
+
+.subdesc .box1{
+   height: 1157px;
+}
+.subdesc .box1 .vertical-line{
+    height: 1150px;
+    margin: 0 107px;
+}
+.subdesc .box2{
+    margin: 64px 0;
+}
+.subdesc .box2 .vertical-line{
+    height: 350px;
+    margin: 0 117px 0 130px;
+}
+.subdesc .box2 .txt-area p{
+    font-size: 20px;
+}
+.subdesc .box3 .vertical-line{
+    height: 300px;
+    margin: 0 117px 0 88px;
+}
+.subdesc .box3 .txt-area p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 41px;
+}
+.subdesc .box3 .txt-area .profile{}
+.subdesc .box3 .txt-area .profile strong{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+.subdesc .box3 .txt-area .profile em{
+    font-size: 18px;
+    font-weight: 300;
+}
+.subdesc .box3 .txt-area .profile p{
+    margin-top: 14px;
+    word-spacing: 0.3rem;
+    color: #444;
+}
+.subdesc .box3 .txt-area .profile button{
+    padding: 10px 20px;
+    color: #5B4DFB;
+    border: 1px solid #5B4DFB;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.subdesc .box3 .txt-area .profile button:hover{
+    background-color: #5668AE;
+    color: #fff;    
+}
+
+/*오디오북배너*/
+.main .audio-banner{
+    padding: 45px 160px 90px;
+}
+.audio-banner img{
+    width: 100%;
+    height: 150px;
+}
+
+/*review*/
+.main .review{
+    background-color: #eee;
+    margin-bottom: 145px;
+}
+.review .inner{
+    padding: 34px 260px;
+    text-align: center;
+}
+.review .title{
+    text-align: center;
+    margin-bottom: 26px;
+}
+.review .title h4{
+    font-size:26px;
+    font-weight: 700;
+}
+.review .stars{
+    width: 235px;
+    margin: 0 auto;
+}
+.review .stars .iconify{
+    font-size: 40px;
+    margin-right: 4px;
+    color: #d9d9d9;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.review .stars .iconify.active{
+    color: #3B90FF;
+}
+.review .stars .iconify:last-child{
+    margin-right: 0;
+}
+.review input[type=text]{
+    width: 100%;
+    height: 230px;
+    margin: 32px 0;
+    padding: 20px;
+    box-sizing:border-box;
+}
+.review input[type=text]::placeholder{
+    color: #444;
+    padding-left: 40px;
+}
+.review input[type=submit]{
+    font-size: 22px;
+    color: #fff;
+    padding: 20px 65px;
+    border: none;
+    background-color: #3B90FF;
+    border-radius: 3px;
+    width: 270px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.review input[type=submit]:hover{
+    background-color: #5668AE;
+}
+
+/*---------------------------------------*/
+
+@media (max-width : 1540px){
+    .maindesc .inner{
+        padding:  37px 90px;
+    }
+    .maindesc .title{
+        width: 1000px;
+    }
+    .maindesc .title strong{
+        font-size: 22px;
+    }
+    .maindesc .wrap{
+        width:1000px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .maindesc .wrap .left{
+        width: 200px;
+        height: 400px;
+    }
+    .maindesc .wrap .left img{
+        width: 200px;
+        margin-left: 0;
+    }
+    .maindesc .wrap .left button{
+        font-size: 16px;
+    }
+    .maindesc .wrap .right{
+        width: 600px;
+        height: 400px;
+    }
+    .maindesc .wrap .right .book-detail h2{
+        font-size: 24px;
+        margin: 20px 0 10px;
+    }
+    .maindesc .wrap .right .book-detail .stars-wrap .stars .iconify{
+        font-size: 18px;
+    }
+    .maindesc .wrap .right .book-detail .stars-wrap p{
+        font-size: 18px;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .maindesc .wrap .right .horizen-line{
+        width: 600px;
+    }
+    .maindesc .wrap .right .price{
+        margin: 20px 0 30px;
+    }
+    .maindesc .wrap .right .price .price-title{
+        height: 100px;
+    }
+    .maindesc .wrap .right .price .price-title p{
+        line-height: 100px;
+    }
+    .maindesc .wrap .right .price .price-detail{
+        height: 100px;
+        padding: 10px 20px;
+    }
+    .maindesc .wrap .right .price .price-detail div{
+        margin-bottom: 8px;
+    }
+    .maindesc .wrap .right .buttons button{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .maindesc .wrap .right .buttons button:nth-child(1),
+    .maindesc .wrap .right .buttons button:nth-child(2){
+        padding: 10px 30px;
+    }
+    .maindesc .wrap .right .buttons button .iconify{
+        font-size: 30px;
+    }
+    .main .sam-banner{
+        margin: 30px 0 50px;
+    }
+    .subdesc .inner{
+        padding: 0 100px;
+    }
+    .subdesc .box{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .subdesc .box .txt-area{
+        width: 600px;
+    }
+    .subdesc .box .txt-area p{
+        font-size: 16px;
+    }
+    .subdesc .box .txt-area p em{
+        font-size: 18px;
+    }
+    .subdesc .box .txt-area .video-area{
+        width: 400px;
+        height: 200px;
+    }
+    .subdesc .box .txt-area span{
+        font-size: 14px;
+    }
+    .subdesc .box .txt-area span br:nth-child(2){
+        display: none;
+    }
+    .subdesc .box1{
+        height: 1000px;
+    }
+    .subdesc .box1 .vertical-line{
+        height: 950px;
+        margin: 0 50px;
+    }
+    .subdesc .box2{
+        height: 290px;
+        margin: 10px auto;
+    }
+    .subdesc .box2 .vertical-line{
+        height: 270px;
+        margin: 0 50px 0 75px;
+    }
+    .subdesc .box3 .vertical-line{
+        height: 300px;
+        margin: 0 50px 0 30px;
+    }
+    .main .audio-banner{
+        padding: 45px 80px 90px;
+    }
+    .review input[type=text]{
+        margin: 20px auto;
+    }
+}   
+
+@media (max-width : 768px){
+    .footer{
+        padding-bottom: 90px;
+    }
+    .main .maindesc{
+        padding-top: 50px;
+    }
+    .maindesc .inner{
+        padding:37px 20px 52px;
+    }
+    .maindesc .title{
+        width: 100%;
+    }
+    .maindesc .title strong{
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .maindesc .wrap{
+        width: 80%;
+        height: 300px;
+    }
+    .maindesc .wrap .left{
+        width: 150px;
+    }
+    .maindesc .wrap .left img{
+        width: 150px;
+    }
+    .maindesc .wrap .left button{
+        font-size: 14px;
+    }
+    .maindesc .wrap .right{}
+    .maindesc .wrap .right .book-detail ul li:nth-child(2){
+        display: none;
+    }
+    .maindesc .wrap .right .book-detail p em{
+        display: none;
+    }
+    .maindesc .wrap .right .horizen-line{
+        display: none;
+    }
+    .maindesc .wrap .right .price .price-title{
+        display: none;
+    }
+    .maindesc .wrap .right .price .price-detail{
+        width: 90%;
+    }
+    .maindesc .wrap .right .buttons{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 70px;
+        background-color: #fff;
+        z-index: 90;
+        /* transform: translateY(80px); */
+        transition: 0.3s;
+    }
+    .maindesc .wrap .right .buttons button:nth-child(1),
+    .maindesc .wrap .right .buttons button:nth-child(2){
+        padding: 10px 50px;
+    }
+    .maindesc .wrap .right .buttons button:nth-child(3),
+    .maindesc .wrap .right .buttons button:nth-child(4){
+        background-color: #fff;
+    }
+    .main .sam-banner{
+        display: none;
+    }
+    .subdesc .inner{
+        padding: 0 20px;
+    }
+    .subdesc{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .subdesc .box{
+        flex-direction: column;
+        width: 90%;
+    }
+    .subdesc .box .txt-area{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .subdesc .box .txt-area .video-area{
+        display: none;
+    }
+    .subdesc .box1{
+        height: auto;
+    }
+    .subdesc .box1 .vertical-line{
+        height: 2px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .subdesc .box1 span{
+        display: none;
+    }
+    .subdesc .box2{
+        height: auto;
+    }
+    .subdesc .box2 .vertical-line{
+        height: 2px;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .subdesc .box3 .vertical-line{
+        height: 2px;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .main .audio-banner{
+        display: none;
+    }
+    .review .inner{
+        padding: 15px 20px;
+    }
+    .review input[type=text]::placeholder{
+        padding: 0;
+    }
+}
+
+@media(max-width : 550px){
+    .maindesc .inner{
+        padding: 0 20px;
+    }
+    .maindesc .wrap .left{
+        width:100px;
+    }
+    .maindesc .wrap .left img{
+        width: 100px;
+    }
+    .maindesc .wrap .left button{
+        padding: 5px 8px;
+    }
+    .maindesc .wrap .right .book-detail ul li{
+        font-size: 12px;
+    }
+    .maindesc .wrap .right .book-detail ul li:nth-child(1){
+        display: none;
+    }
+    .maindesc .wrap .right .book-detail h2{
+        font-size: 18px;
+    }
+    .maindesc .wrap .right{
+        width:100%;
+        height: auto;
+    }
+    .maindesc .wrap .right .inner{
+        padding:60px 0 60px 30px;
+    }
+    .maindesc .wrap .right .book-detail .stars-wrap .stars .iconify{
+        font-size: 14px;
+    }
+    .maindesc .wrap .right .book-detail .stars-wrap p{
+        font-size: 14px;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .maindesc .wrap .right .price .price-detail{
+        position: absolute;
+        left: 50%;
+        top:380px;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .maindesc .wrap .right .buttons button:nth-child(1),
+    .maindesc .wrap .right .buttons button:nth-child(2){
+        padding: 9px 10px;
+    }
+    .subdesc{
+        margin-top: 100px;
+    }
+    .subdesc .box strong{
+        font-size: 18px;
+    }
+    .subdesc .box .txt-area p{
+        font-size: 14px;
+    }
+    .subdesc .box .txt-area p em{
+        font-size: 16px;
+    }
+    .subdesc .box3 .txt-area p{
+        font-size: 14px;
+    }
+    .subdesc .box3 .txt-area .profile strong{   
+        font-size: 16px;
+    }
+    .subdesc .box3 .txt-area .profile em{
+        font-size: 16px;
+    }
+    .review .title h4{
+        font-size: 18px;
+    }
+    .review .stars .iconify{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

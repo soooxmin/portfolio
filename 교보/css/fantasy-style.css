@@ -1,0 +1,350 @@
+
+.main section .inner .title{
+    width: 100%;
+    height: 70px;
+}
+.main section .title strong {
+    font-size: 26px;
+    color: #003477;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 57px;
+}
+
+/*오늘의책*/
+.main .today-book{
+    background-color: #DEE4FF;
+    padding-top: 80px;
+}
+.today-book .inner{
+    padding: 10px 160px 95px;
+}
+.today-book .contents-wrap{
+    display: flex;
+    justify-content: center;
+    width: 1360px;
+    height: 620px;
+    margin: 10px auto 0;
+    text-align: center;
+    font-family: "NanumBarunGothic",sans-serif;
+}
+.today-book .contents-wrap .left{
+    background-color: #fff;
+    margin-right: 40px;
+}
+.today-book .contents-wrap .left img{
+    width: 440px;
+    height: 540px;
+    object-fit: cover;
+}
+.today-book .contents-wrap div p{
+    font-weight: 300;
+    color: #787878;
+    margin : 7px 0 10px;
+}
+.today-book .contents-wrap div strong{
+    font-weight: 500;
+    color: #5668AE;
+}
+
+.today-book .contents-wrap .right{}
+.today-book .contents-wrap .right .box{}
+.today-book .contents-wrap .right .box:first-child{
+    margin-bottom: 40px;
+}
+.today-book .contents-wrap .right .box ul{
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+}
+.today-book .contents-wrap .right .box ul li{
+    width: 200px;
+    height: 290px;
+    background-color: #fff;
+}
+.today-book .contents-wrap .right .box ul li::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
+.today-book .contents-wrap .right .box ul li img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 9px;
+}
+
+
+/*신간*/
+.main .new {}
+
+.new .inner {
+    padding: 30px 160px 95px;
+}
+
+.new .new-slide {
+    position: relative;
+    margin-left: 20px;
+}
+
+.new .new-slide .iconify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.new .new-slide .iconify.left {
+    left: -70px;
+    display: none;
+}
+
+.new .new-slide .iconify.right {
+    right: -70px;
+}
+
+.new .new-slide .new-slider {
+    margin-top: 50px;
+
+}
+.new .new-slide .new-slider.slick-initialized{
+    
+}
+
+.new .new-slide .new-slider .item {
+    width: 1560px;
+    height: 500px;
+}
+
+.new .new-slide .new-slider .item ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new .new-slide .new-slider .item ul li {
+    width: 280px;
+    height: 470px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.new .new-slide .new-slider .item ul li img {
+    width: 280px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.new .new-slide .new-slider .item ul li strong {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.new .new-slide .new-slider .item ul li p {
+    margin-top: 12px;
+    color: #464646;
+}
+
+
+
+/*샘배너*/
+.main .sam-banner{
+    margin-bottom: 200px;
+}
+.main .sam-banner .inner{}
+.main .sam-banner .inner .slide-banner{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.main .sam-banner .inner .slide-banner .item{
+    width: 100%;
+    height: 100%;
+}
+.main .sam-banner .inner .slide-banner .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------*/
+@media (max-width : 1600px) {
+    .new .new-slide .new-slider .item ul li {
+        width: 200px;
+        height: 350px;
+    }
+
+    .new .new-slide .new-slider .item ul li img {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 7px;
+    }
+}
+/*------------------------------------*/
+@media (max-width : 1450px) {
+    .today-book .contents-wrap {
+        width: 100%;
+        height: auto;
+    }
+
+    .today-book .contents-wrap .left img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .today-book .contents-wrap .right .box ul {
+        width: 700px;
+    }
+
+    .today-book .contents-wrap .right .box ul li {
+        width: 150px;
+        height: 230px;
+    }
+
+    .today-book .contents-wrap .right .box ul li::before {
+        width: 150px;
+        height: 190px;
+    }
+
+    .today-book .contents-wrap .right .box ul li img {
+        height: 190px;
+    }
+}
+/*-------------------------------------*/
+
+@media (max-width: 768px){
+    .layout{
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+        
+    .main section .inner {
+        padding: 20px 20px;
+    }
+    .main section .inner .title{
+        width: 100%;
+        height: 30px;
+    }
+    .main section .title strong {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .main .today-book{
+        padding-top: 50px;
+    }
+    .today-book .contents-wrap{
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    .today-book .contents-wrap .left{
+       display: none;
+    }
+    .today-book .contents-wrap div p{
+        display: none;
+    }
+    .today-book .contents-wrap div strong{
+        font-size: 14px;
+    }
+    .today-book .contents-wrap .right{
+        display: flex;
+    }
+    .today-book .contents-wrap .right .box ul{
+        width: 100%;
+    }
+    .today-book .contents-wrap .right .box ul li{
+        width: 180px;
+        height: 250px;
+        margin-right: 20px;
+    }
+    .today-book .contents-wrap .right .box ul li::before{
+        display: none;
+    }
+    .today-book .contents-wrap .right .box ul li img{
+        width: 180px;
+        height: 230px;
+        margin-bottom: 0;
+        display: block;
+    }
+    .today-book .contents-wrap .right .box:first-child{
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .new .new-slide .iconify{
+        display: none;
+    }
+
+    .new .new-slide .new-slider{
+        display: flex;
+        margin-top: 20px;
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    .new .new-slide .new-slider .item{
+        height: 100%;
+    }
+    .new .new-slide .new-slider .item ul li{
+        width: 180px;
+        height: 260px;
+        margin-right: 15px;
+    }
+    .new .new-slide .new-slider .item ul li img{
+        width: 180px;
+        height: 230px;
+        display: block;
+        margin-bottom: 3px;
+    }
+    .new .new-slide .new-slider .item ul li strong{
+        font-size: 14px;
+    }
+    .new .new-slide .new-slider .item ul li p{
+        display: none;
+    }
+    .main .sam-banner{
+        margin-bottom: 50px;
+    }
+    .main .sam-banner .slide-banner{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

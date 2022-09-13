@@ -1,0 +1,623 @@
+
+
+.main{
+    padding-top: 70px;
+}
+/*탭메뉴*/
+.main .tab-menu{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 90px;
+}
+.tab-menu .basic,
+.tab-menu .infinite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 66px;
+    border-bottom: 4px solid black;
+    box-sizing: border-box;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.tab-menu .basic.tab{
+    opacity: 1;
+    border-color: #25BCA1;
+}
+.tab-menu .infinite.tab{
+    opacity: 1;
+    border-color: #BC7FE3;
+}
+.tab-menu .basic img,
+.tab-menu .infinite img {
+    height: 26px;
+}
+.tab-menu .basic p,
+.tab-menu .infinite p {
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+section.basic,
+section.infinite{
+    display: none;
+}
+section.basic.tab,
+section.infinite.tab {
+    display: block;
+}
+
+
+
+
+/*베이직*/
+
+/*--메인*/
+.basic .mainbox{
+    width: 100%;
+    height: 335px;
+    margin-top: 30px;
+    background: linear-gradient(to left, #0EBBBB,#4BBF7B);
+    color: #Fff;
+    text-align: center;
+    padding-top: 96px;
+    box-sizing: border-box;
+}
+.mainbox strong{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.mainbox .txt{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+.mainbox .txt img{
+    height: 40px;
+}
+.mainbox .txt p{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+/*-설명*/
+.basic .desc{}
+.desc .inner{
+    padding: 110px 449px 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.desc .left{
+    font-size: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.desc .left strong{
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+.desc .left strong em{
+    font-style: normal;
+    font-weight: 700;
+}
+.desc .right{
+    width: 400px;
+    height: 264px;
+    box-sizing: border-box;
+}
+.desc .right .box{
+    width: 100%;
+    height: 122px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+.desc .right .box:last-child{margin-bottom: 0;}
+.desc .right .box .title{
+    width: 100%;
+    height: 52px;
+    background-color:#6CDBAF ;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+.desc .right .box .title img{
+    height: 22px;
+    padding-top: 5px;
+}
+.desc .right .box .title p{
+    margin-left: 5px;
+}
+.desc .right .box .txt{
+    font-family: "NanumBarunGothic",sans-serif;
+    padding: 20px 107px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+}
+.desc .right .box .txt p{
+    color: #18B175;
+    font-size: 20px;
+    font-weight: 300;
+}
+.desc .right .box .txt p span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.desc .right .box .txt p em{
+    font-size: 20px;
+    font-weight: 300;
+    color: #8F8787;
+}
+
+
+/*-reading*/
+.basic .reading{
+    width: 100%;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+.reading .inner{
+    padding: 90px 700px;
+}
+.reading h3{
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.reading h3 em{
+    font-weight: 700;
+}
+.reading p{
+    font-family: "NanumBarunGothic",sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.reading p:nth-of-type(1){margin-top: 40px;}
+.reading p strong{
+    font-weight: 500;
+}
+.reading p em{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/*-manybooks*/
+.basic .manybooks{
+    position: relative;
+    height: 500px;
+    background: url(../images/sam-bg.jpg) no-repeat center/cover;
+}
+.basic .manybooks::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.manybooks .inner{}
+.manybooks .inner > div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.manybooks p{
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.5;
+    width: 800px;
+    text-align: center;
+}
+.manybooks p em{
+    font-weight: 700;
+}
+
+/*-pay*/
+.basic .pay{
+    background-color: #F6F6F6;
+}
+.pay .inner{
+    padding:76px 448px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pay .left{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.pay .left .title{
+    margin-bottom: 25px;
+}
+.pay .left .title p{
+    font-size: 40px;
+    font-weight: 700;
+}
+.pay .left p{
+    font-family: "NanumBarunGothic",sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.pay .right{}
+.pay .right img{
+    width: 435px;
+    height: 232px;
+}
+
+/*-anywhere*/
+.basic .anywhere{}
+.anywhere .inner{
+    text-align: center;
+    padding: 100px 0 192px;
+}
+.anywhere .title{
+    width: 500px; 
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.anywhere .title h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+.anywhere .title p{
+    font-family: "NanumBarunGothic",sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+.anywhere .wrap{
+    text-align: center;
+    width: 564px;
+    margin: 36px auto 0;
+}
+.anywhere .wrap img{
+    width: 564px;
+    height: 465px;
+    margin: 0 auto;
+    margin-bottom: 126px;
+}
+.anywhere .wrap button{
+    font-family: "NanumBarunGothic", sans-serif;
+    padding: 20px 80px;
+    font-size: 30px;
+    color: #fff;
+    background: linear-gradient(to left, #0EBBBB, #4BBF7B);
+    border-radius: 10px;
+}
+.anywhere .wrap button:hover{
+    background: #5668AE;
+}
+
+
+/*무제한*/
+
+/*-mainbox*/
+.infinite .mainbox{
+    width: 100%;
+    height: 335px;
+    margin-top: 30px;
+    background:linear-gradient(to right, #D686E3, #9A76E4);
+    color: #Fff;
+    text-align: center;
+    padding-top: 96px;
+    box-sizing: border-box;
+}
+.infinite .mainbox strong{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/*-desc*/
+.infinite .desc{}   
+.infinite .desc .right{
+    height: 142px;
+    width: 400px;
+}
+.infinite .desc .right .box{
+    margin-bottom: 0;
+}
+.infinite .desc .right .box .title{background-color: #E19FFA;}
+.infinite .desc .right .box .txt{
+    padding: 0;
+    text-align: center;
+    line-height: 80px;
+}
+.infinite .desc .right .box .txt p{color: #CF50FF;}
+
+/*-reading*/
+
+.infinite .reading{background-color: #f6f6f6;}
+.infinite .reading .inner{
+    padding: 80px 620px;
+    text-align: center;
+}
+.infinite .reading h3{
+    line-height: 1.3;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.infinite .reading p{
+    margin-bottom: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.infinite .reading p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+/*-manybooks*/
+.infinite .manybooks {
+    position: relative;
+    height: 500px;
+    background: url(../images/sam-bg.jpg) no-repeat center/cover;
+}
+
+.infinite .manybooks::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.infinite .pay{background-color: #f6f6f6;}
+
+.infinite .anywhere .wrap button{background: linear-gradient(to right, #D686E3, #9A76E4);}
+.infinite .anywhere .wrap button:hover{background: #5668AE;}
+
+/*-----------------------*/
+
+@media (max-width : 1650px){
+    .desc .inner{
+        padding: 60px 200px 30px;
+    }
+    .desc .left{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .infinite .reading .inner,
+    .reading .inner{
+        padding: 50px 300px;
+    }
+    .reading h3{
+        font-size:30px;
+        font-weight: 300;
+    }
+    .reading h3{
+        font-size: 30px;
+    }
+    .basic .manybooks,
+    .infinite .manybooks{
+        height: 300px;
+    }
+    .manybooks p{
+        font-size: 26px;
+        width: 500px;
+    }
+    .pay .inner{
+        padding: 40px 200px;
+    }
+    .pay .left .title p{
+        font-size: 30px;
+    }
+    .anywhere .title h3{
+        font-size: 30px;
+    }
+    .anywhere .wrap{
+        width: 500px;
+    }
+    .anywhere .wrap img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media (max-width : 768px){
+    .main{
+        padding-top:50px;
+    }
+    .tab-menu .basic,
+    .tab-menu .infinite {
+        width: 150px;
+        height: 66px;
+    }
+    .tab-menu .basic img,
+    .tab-menu .infinite img {
+        height: 20px;
+    }
+    .tab-menu .basic p,
+    .tab-menu .infinite p {
+        font-size: 20px;
+    }
+    .desc .inner{
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .infinite .mainbox strong,
+    .mainbox strong{
+        font-size: 20px;
+    }
+    .mainbox .txt img{
+        height: 22px;
+        margin-left: 5px;
+    }
+    .mainbox .txt p{
+        font-size: 22px;
+    }
+    .infinite .reading .inner,
+    .reading .inner{
+        padding:20px 150px;
+    }
+    .pay .inner{
+        flex-direction: column;
+        padding:76px 200px;
+        text-align: center;
+    }
+    .pay .left{
+        margin-bottom: 20px;
+    }
+    .pay .left .title{
+        margin-bottom: 8px;
+    }   
+    .pay .left p{
+        font-size: 20px;
+    }
+    .pay .right img{
+        width: 280px;
+        height: 150px;
+    }
+    .anywhere .title p{
+        font-size: 20px;
+        width: 430px;
+        margin: 20px auto 0;
+    }
+    .anywhere .wrap img{
+        width: 282px;
+        height: 230px;
+        margin-bottom: 60px;
+    }
+    .anywhere .wrap button{
+        font-size: 18px;
+    }
+}
+
+@media (max-width : 530px){
+    .desc .left {
+        font-size: 20px;
+    }
+    .infinite .desc .right,
+    .desc .right{
+        width: 300px;
+    }
+    .desc .right .box{
+        height: 100px;
+    }
+    .desc .right .box .title{
+        font-size: 18px;
+    }
+    .desc .right .box .title img{
+        height: 16px;
+        padding-top: 0;
+    }
+    .desc .right .box .txt{
+        padding: 15px 30px;
+    }
+    .desc .right .box .txt p {
+        font-size: 18px;
+    }
+    
+    .desc .right .box .txt p span {
+        font-size: 20px;
+    }
+    
+    .desc .right .box .txt p em {
+        font-size: 14px;
+    }
+    .infinite .reading .inner,
+    .reading .inner {
+        padding: 40px 30px; 
+    }
+    .reading h3{
+        font-size: 20px;
+    }
+    .reading p{
+        font-size: 14px;
+    }
+    .reading p em{
+        font-size: 16px;
+    }
+    .manybooks p{
+        font-size: 20px;
+        width: 300px;
+    }
+    .pay .inner {
+        padding: 30px 20px;
+    }
+    .pay .left .title p{
+        font-size: 20px;
+    }
+    .pay .left p{
+        font-size: 16px;
+    }
+    .anywhere .inner {
+        margin: 0 auto;
+        padding:30px 20px;
+    }
+    .anywhere .title{
+        width: 300px;
+    }
+    .anywhere .title h3{
+        font-size: 20px;
+    }
+    .anywhere .title p{
+        width: 300px;
+        font-size: 16px;
+    }
+    .anywhere .wrap{
+        width: 300px;
+    }   
+    .anywhere .wrap button {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .infinite .desc .right .box .txt {
+        text-align: center;
+        line-height: 40px;
+    }
+    .infinite .reading p:nth-of-type(2) {
+        font-size: 14px;
+    }
+}

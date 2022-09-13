@@ -1,0 +1,504 @@
+.main{}
+
+.main section .inner .title{
+    width: 1600px;
+    height: 70px;
+}
+.main section .title strong {
+    font-size: 26px;
+    color: #003477;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 57px;
+}
+
+/*오늘의 책*/
+.today-book{
+    width: 100%;
+    padding-top: 80px;
+    background-color: #DEE4FF;
+}
+.today-book .inner{
+    padding: 30px 0;
+}
+.today-book .title{
+    padding: 0 160px;
+    margin-bottom: 25px;
+}
+.today-book .slider{}
+.today-book .slider .item{
+    width: 280px;
+    height: 470px;
+    background-color: #fff;
+    margin-right: 40px;
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.today-book .slider .item.slick-current{
+    transform: scale(1);
+    opacity: 1;
+}
+.today-book .slider .item .image{
+    position: relative;
+}
+.today-book .slider .item .image img:first-child{
+    width: 280px;
+    height: 400px;
+}
+.today-book .slider .item .image img:last-child{
+    position: absolute;
+    right: 22px;
+    bottom: 8px;
+    width: 60px;
+}
+.today-book .slider .item .text{
+    font-family: "NanumBarunGothic",sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 7px;
+}
+.today-book .slider .item .text strong{
+    font-size: 18px;
+    font-weight: 300;
+}
+.today-book .slider .item .text p{
+    color: #464646;
+    margin-top: 15px;
+}
+
+.today-book .slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.today-book .slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin-right: 6px;
+}
+.today-book .slider .slick-dots li.slick-active{
+    background-color: #2E93A6;
+}
+.today-book .slider .slick-dots li button{display: none;}
+
+
+/*오디오북배너*/
+.main .audio-banner{
+    padding: 60px 160px;
+}
+.audio-banner div img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/*민음사 고전*/
+.main .classic{
+    margin-bottom: 50px;
+}
+.classic .inner{
+    padding: 0 160px;
+    display: flex;
+}
+.classic .left{
+    width: 536px;
+    height: 571px;
+}
+.classic .left .txt{
+    width: 230px;
+    margin: 156px 0 0 156px;
+}
+.classic .left .txt strong{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.classic .left .txt p{
+    font-size: 20px;
+    color: #787878;
+    margin-top: 24px;
+}
+
+.classic .right{
+    display:  flex;
+    align-items: center;
+    width: 1062px;
+    height: 571px;
+}
+.classic .right .vertical-line{
+    width: 2px;
+    height: 470px;
+    background-color: #d9d9d9;
+    margin-right: 122px;
+}
+.classic .right .box{
+    width: 280px;
+    height: 470px;
+    background-color: #F6F6F6;
+    margin-right: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.classic .right .box:last-child{
+    margin-right: 0;
+}
+.classic .right .box img{
+    width: 280px;
+    height: 400px;
+}
+.classic .right .box .text{
+    font-family: "NanumBarunGothic",sans-serif;
+    text-align: center;
+    margin-top: 7px;
+}
+.classic .right .box .text strong{
+    font-size: 18px;
+    font-weight: 300;
+}
+.classic .right .box .text p{
+    font-weight: 300;
+    margin-top: 7px;
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*celeb*/
+.main .celeb{
+    margin-bottom: 95px;
+}
+.celeb .inner{
+    padding: 0 160px;
+    display: flex;
+}
+.celeb .left{
+    display: flex;
+    width: 536px;
+    height: 571px;
+}
+.celeb .left .txt{
+    width: 230px;
+    margin: 156px 0 0 156px;
+}
+.celeb .left .txt strong{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.celeb .left .txt p{
+    font-size: 20px;
+    color: #787878;
+    margin-top: 24px;
+}
+
+.celeb .right{
+    display:  flex;
+    align-items: center;
+    width: 1062px;
+    height: 571px;
+}
+.celeb .right .vertical-line{
+    width: 2px;
+    height: 470px;
+    background-color: #d9d9d9;
+    margin-right: 122px;
+}
+.celeb .right .box{
+    width: 280px;
+    height: 470px;
+    background-color: #F6F6F6;
+    margin-right: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.celeb .right .box:last-child{
+    margin-right: 0;
+}
+.celeb .right .box img{
+    width: 280px;
+    height: 400px;
+}
+.celeb .right .box .text{
+    font-family: "NanumBarunGothic",sans-serif;
+    text-align: center;
+    margin-top: 7px;
+}
+.celeb .right .box .text strong{
+    font-size: 18px;
+    font-weight: 300;
+}
+.celeb .right .box .text p{
+    font-weight: 300;
+    margin-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+@media (max-width : 1600px){
+   
+    .celeb .left,
+    .classic .left{
+        width: 300px;
+        height: 300px;
+    }
+    .celeb .left .txt,
+    .classic .left .txt{
+        width: 230px;
+        margin: 100px 0;
+    }
+    .celeb .right .vertical-line,
+    .classic .right .vertical-line{
+        height: 470px;
+        margin-right: 60px;
+    }
+}
+
+
+@media (max-width : 1380px){
+    
+    .classic .right .box,
+    .celeb .right .box{
+        width: 200px;
+        height: 340px;
+    }
+    
+    .classic .right .box img,
+    .celeb .right .box img{
+        width: 100%;
+        height: 280px;
+    }
+    .classic .right .box .text strong{
+        font-size: 16px;
+    }
+    .classic .right .box .text p{
+        font-size: 14px;
+    }
+}
+
+/*----------------------------------------------*/
+@media (max-width : 768px){
+
+    .main {
+        width: 100%;
+    }
+        
+    .main section .inner {
+        padding: 20px 20px;
+    }
+    .main section .inner .title{
+        width: 100%;
+        height: 30px;
+    }
+    .main section .title strong {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+    .today-book{
+        padding-top: 50px;
+    }
+    .today-book .title{
+        padding: 0;
+        margin-bottom: 25px;
+    }
+    .today-book .slider .item{
+        width: 180px;
+        height: 300px;
+        margin-right: 20px;
+    }
+    .today-book .slider .item .image img:first-child{
+        width: 180px;
+        height: 250px;
+    }
+    .today-book .slider .item .image img:last-child{
+        width: 30px;
+    }
+    .today-book .slider .item .text strong{
+        font-size: 14px;
+    }
+    .today-book .slider .item .text p{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .today-book .slider .slick-dots li{
+        width:6px;
+        height:6px;
+    }
+
+    .main .audio-banner{
+        display: none;
+    }
+
+
+    .classic .inner{
+        padding: 0;
+        font-family: "NanumBarunGothic",sans-serif;
+    }
+    .classic .left{
+        width: 200px;
+        height: 300px;
+        margin-right: 25px;
+        background-color: #003477;
+        border-radius: 15px;
+    }
+    .classic .left .txt{
+        color: white;
+        width: 110px;
+        margin: 0;
+        padding:  80px 15px;
+        box-sizing: border-box;
+    }
+    .classic .left .txt strong{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .classic .left .txt p{
+        font-size: 14px;
+        margin-top: 15px;
+        color: #ccc;
+    }
+    .classic .right{
+        width: 1062px;
+        height: 300px;
+        overflow: scroll;
+    }
+    .classic .right .vertical-line{
+        display: none;
+    }
+    .classic .right .box{
+        width: 150px;
+        height: 280px;
+        background-color: #F6F6F6;
+        margin-right: 20px;
+    }
+    .classic .right .box:last-child{
+        margin-right: 0;
+    }
+    .classic .right .box img{
+        width: 150px;
+        height: 220px;
+    }
+    .classic .right .box .text{
+        margin-top: 3px;
+    }
+    .classic .right .box .text strong{
+        font-size: 14px;
+    }
+    .classic .right .box .text p{
+        margin-top: 5px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .celeb .inner{
+        padding: 0;
+        font-family: "NanumBarunGothic",sans-serif;
+    }
+    .celeb .left{
+        width: 200px;
+        height: 300px;
+        margin-right: 25px;
+        background-color: #003477;
+        border-radius: 15px;
+    }
+    .celeb .left .txt{
+        color: white;
+        width: 115px;
+        margin: 0;
+        padding: 80px 15px;
+        box-sizing: border-box;
+    }
+    .celeb .left .txt strong{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .celeb .left .txt p{
+        font-size: 14px;
+        margin-top: 15px;
+        color: #ccc;
+    }
+    .celeb .right{
+        width: 1062px;
+        height: 300px;
+        overflow: scroll;
+    }
+    .celeb .right .vertical-line{
+        display: none;
+    }
+    .celeb .right .box{
+        width: 150px;
+        height: 270px;
+        background-color: #F6F6F6;
+        margin-right: 20px;
+    }
+    .celeb .right .box:last-child{
+        margin-right: 0;
+    }
+    .celeb .right .box img{
+        width: 150px;
+        height: 210px;
+    }
+    .celeb .right .box .text{
+        margin-top: 3px;
+    }
+    .celeb .right .box .text strong{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .celeb .right .box .text p{
+        margin-top: 5px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

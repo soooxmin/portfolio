@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stella Artois</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/style-stella.css">
+</head>
+<body>
+
+<section class="container">
+    <div class="video-frame">
+        <video src="video/beer-pouring.mp4" muted autoplay playsinline loop></video>
+    </div>
+
+
+    <div class="title">
+        <h1 class="logo"><img src="images/logo-stella.png" alt=""></h1>
+        <p><em>600</em> years of love in</p>
+        <h2>THE LIFE <img src="images/artois-.png" alt=""> ARTOIS</h2>
+
+        <div class="btn-area">
+            <a href="#">BUY NOW</a>
+            <a href="#">READ MORE</a>
+        </div>
+    </div>
+
+
+</section>
+
+<div class="nav-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="popup-gnb">
+    <ul class="gnb">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Brand Story</a></li>
+        <li><a href="#">Ritual</a></li>
+        <li><a href="#">Campaign</a></li>
+        <li><a href="#">Store</a></li>
+    </ul>
+
+    <ul class="sns-area">
+        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+</div>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(".nav-btn").click(function () {
+
+        console.log("hi");
+        $(this).toggleClass("on").prev().toggleClass("on");
+        $(".popup-gnb").toggleClass("on");
+    });
+
+
+</script>
+
+
+</body>
+</html>

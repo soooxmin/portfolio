@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+</head>
+<style>
+
+
+/* div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+}
+.box1{
+    background-color: aquamarine;
+    border-radius: 90% 40% 20% 80%/60% 40% 50% 80%;
+    animation: rotate1 3s infinite linear;
+}
+.box2{
+    border:2px solid black;
+    border-radius: 30% 70% 60% 80% / 20% 50% 30% 50% ;
+    animation: rotate1 7s infinite linear;
+}
+.box3{
+    border: 2px solid gray;
+    border-radius: 20px 30px 50px 60px;
+    animation: rotate1 10s infinite linear;
+}*/
+
+@keyframes rotate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+/* div{
+    margin: 300px;
+
+    width: 553px;
+    height: 408px;
+    background-color: #CAE2FF;
+
+    border-radius: 50% 80% 90% 60%/70% 75% 80% 60%; 
+    animation: rotate1 5s infinite linear;
+} */
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient( #1e086c,#ccd798);
+}
+
+.mouse-pointer{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid black; 
+    /* pointer-events: ; */
+}
+/* 
+.thing{
+    width: 381px;
+    height: 398px;
+    background-color: blue;
+    border-radius: 20% 40% 20% 10%/90% 40% 20% 100%;
+} */
+
+img{
+    animation: rotate1 3s infinite linear;
+}
+
+</style>
+<body>
+
+    <div class="mouse-pointer"></div>
+    
+    <div class="box">
+        <!-- <div class="thing"></div> -->
+        <img src="images/Ellipse 2.png">
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+    $(window).on("mousemove", function (event) {
+
+        const mousex = event.clientX;
+        const mouseY = event.clientY;
+
+        // $(".pos").text(mousex + " / " + mouseY);
+
+        $(".mouse-pointer").css({
+            left: mousex + "px",
+            top: mouseY + "px",
+        })
+    });
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

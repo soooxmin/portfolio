@@ -1,0 +1,180 @@
+
+body{    background-color: #eee;}
+
+.login{
+    font-family:"NanumBarunGothic",sans-serif;
+    font-weight: 300;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.login h2{
+    margin: 60px 0 40px;
+    text-align: center;
+}
+.login h2 a img{
+    width: 200px;
+}
+
+.login-area{
+    margin-bottom: 60px;
+}
+.login-area .box{}
+.login-area .box input{
+    width: 500px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+.login-area .box input::placeholder{
+    color: #333;
+}
+.login-area .box.id{
+    margin-bottom: 4px;
+}
+
+.login-area .check{
+    float: left;
+    margin-top: 10px;
+}
+.login-area label{
+    position: relative;
+    color: #666;
+    top: -2px;
+    cursor: pointer;
+}
+.login-area label:hover{
+    text-decoration: underline;
+}
+.login-area label input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D3D3D3;
+}
+
+.login-area .link{
+    float: right;
+    margin-top: 10px;
+}
+.login-area .link a{
+    color: #666;
+}
+.login-area .link a:hover{
+    text-decoration: underline;
+}
+.login-area .link a:first-child{
+    margin-right: 10px;
+}
+.login-area .link a:first-child::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin-left: 10px;
+}
+
+.btn-area{}
+.btn-area button{
+    width: 500px;
+    height: 56px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-area button:first-child{
+    color: #fff;
+    background-color: #5B4DFB;
+    margin-bottom: 4px;
+}
+.btn-area button:last-child{
+    color: #666;
+    border: 1px solid #CCC;
+    background-color: #fff;
+}
+.btn-area button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.social{
+    margin-top: 50px;
+    text-align: center;
+}
+.social .title{
+    width: 300px;
+    margin: 0 auto 20px;
+    border-bottom: 2px solid #d9d9d9;
+    text-align: center;
+    line-height: 45px;
+}
+.social .title p{
+    color: #666;
+}
+
+.social .social-btn{}
+.social .social-btn button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.social .social-btn button:nth-child(1){background-color: #FAE100;}
+.social .social-btn button:nth-child(2){background-color: #03DB61;}
+.social .social-btn button:nth-child(3){background-color: #fff;}
+.social .social-btn button:nth-child(4){
+    background-color: #3A589E;
+    margin-right: 0;
+}
+.social .social-btn button:hover {
+    background: #5668AE;
+}
+.social .social-btn button img{
+    height: 30px;
+    line-height: 60px;
+}
+.social .social-btn button:nth-child(2) img{
+    height: 25px;
+}
+
+/*-------------------------*/
+@media(max-width : 550px){
+    .login{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px 20px;
+    }
+    .login-area{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .login h1 a img{
+        width: 140px;
+    }
+    .login-area .box input{
+        width: 280px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    .login-area .check{
+        float: right;
+    }
+    .login-area .link{
+        margin: 30px 55px 40px;
+    }
+    .btn-area button{
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+

@@ -1,0 +1,587 @@
+.main section .inner .title {
+    width: 100%;
+    height: 70px;
+}
+
+.main section .title strong {
+    font-size: 26px;
+    color: #003477;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 57px;
+}
+
+/*메인배너*/
+.main .main-banner {
+    position: relative;
+    padding-top: 80px;
+}
+
+.main-banner .iconify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main-banner .iconify.left {
+    left: 80px;
+}
+
+.main-banner .iconify.right {
+    right: 80px;
+}
+
+.main-banner .slider {
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner .slider .item {
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner .slider .item img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner .slider .slick-dots{
+    position: absolute;
+    left: 360px;
+    bottom: 50px;
+    display: flex;
+}
+.main-banner .slider .slick-dots li{
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin-right: 10px;
+}
+.main-banner .slider .slick-dots li.slick-active{
+    background-color: #3B90FF;
+}
+.main-banner .slider .slick-dots li button{
+    display: none;
+}
+
+/* 오늘의 책*/
+.main .today-book {}
+
+.today-book .inner {
+    padding: 75px 160px 95px;
+}
+.today-book .contents {
+    width: 100%;
+    margin-top: 26px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-book .contents .box {
+    width: 23%;
+    height: 435px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.today-book .contents .box .img-area {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.today-book .contents .box1 .img-area {
+    background: #BDC351;
+}
+
+.today-book .contents .box2 .img-area {
+    background: #3A5D92;
+}
+
+.today-book .contents .box3 .img-area {
+    background: #0E0E10;
+}
+
+.today-book .contents .box4 .img-area {
+    background: #DB998F;
+}
+.today-book .contents .box .img-area div{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width:60%;
+    height: 300px;
+}
+.today-book .contents .box .img-area img {
+    width: 100%;
+    height: 100%
+}
+
+.today-book .contents .box .text-area {
+    font-family: "NanumBarunGothic", sans-serif;
+    text-align: center;
+}
+
+.today-book .contents .box .text-area p {
+    margin: 21px 0 15px;
+    color: #787878;
+    font-weight: 300;
+}
+
+.today-book .contents .box .text-area strong {
+    color: #5668AE;
+    font-weight: 500;
+}
+
+/*샘배너*/
+.main .sam-banner{}
+.main .sam-banner .inner{}
+.main .sam-banner .inner .slide-banner{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.main .sam-banner .inner .slide-banner .item{
+    width: 100%;
+    height: 100%;
+}
+.main .sam-banner .inner .slide-banner .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/*베스트셀러*/
+.main .best-seller {
+    position: relative;
+}
+
+.best-seller .inner {
+    padding: 95px 160px 55px;
+}
+
+.best-seller .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-seller .title .tabmenu{
+    padding-right: 30px;
+}
+.best-seller .title .tabmenu span{
+    display: inline-block;
+    padding: 7px 15px;
+    border: 2px solid #9189F5;
+    border-radius: 20px;
+    color: #5B4DFB;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.best-seller .title .tabmenu span.active{
+    background-color: #5B4DFB;
+    color: #fff;
+    border-color: #5B4DFB;
+}
+.best-seller .btn-area{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    height: 580px;
+}
+.best-seller .btn-area button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index:100;
+    background-color: transparent;
+}
+.best-seller .btn-area .left{left: 0;}
+.best-seller .btn-area .right{right: 0;}
+
+.best-seller .btn-area .left,
+.best-seller .btn-area .right{
+    opacity: 0;
+    visibility: hidden;
+}
+.best-seller .btn-area .left.on,
+.best-seller .btn-area .right.on{
+    opacity: 1;
+    visibility: visible;
+}
+/*------------------------------*/
+.best-seller .ranking-box {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.best-seller .ranking-box .rank-slide{
+    display: none;
+}
+/*--------------------------------------------------------*/
+.best-seller .ranking-box .rank-slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+}
+.best-seller .ranking-box .rank-slide.day{
+    display: flex;
+}
+.best-seller .ranking-box .rank-slide .item{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.best-seller .ranking-box .rank-slide .item ul{
+    width: 400px;
+    height: 500px;
+}
+.best-seller .ranking-box .rank-slide .item ul li{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 140px;
+    margin-bottom: 40px;
+}
+.best-seller .ranking-box .rank-slide .item ul li:last-child{
+    margin-bottom: 0;
+}
+.best-seller .ranking-box .rank-slide .item ul li em{
+    font-size: 30px;
+    font-style: normal;
+    margin-left: 40px;
+}
+.best-seller .ranking-box .rank-slide .item ul li img:nth-of-type(1){
+    width: 100px;
+    height: 140px;
+    margin: 0 37px 0 47px;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text{
+    width: 150px;
+    height: 90px;
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text strong{
+    font-size: 18px;
+    font-weight: 300;
+}
+.best-seller .ranking-box .rank-slide .item ul li .text p{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
+/*--------------------------------------------------------*/
+
+/*신간도서*/
+.main .new {
+    background-color: #ececec;
+}
+
+.new .inner {
+    padding: 30px 160px 95px;
+}
+
+.new .new-slide {
+    position: relative;
+    margin-left: 20px;
+}
+
+.new .new-slide .iconify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.new .new-slide .iconify.left {
+    left: -70px;
+}
+
+.new .new-slide .iconify.right {
+    right: -70px;
+}
+
+.new .new-slide .new-slider {
+    margin-top: 50px;
+}
+.new .new-slide .new-slider.slick-initialized{}
+
+.new .new-slide .new-slider .item {
+    width: 100%;
+    height: 500px;
+}
+.new .new-slide .new-slider .item.slick-current{
+}
+
+.new .new-slide .new-slider .item ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new .new-slide .new-slider .item ul li {
+    width: 280px;
+    height: 470px;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.new .new-slide .new-slider .item ul li:last-child{
+    margin-right: 0;
+}
+
+.new .new-slide .new-slider .item ul li img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 7px;
+}
+
+.new .new-slide .new-slider .item ul li strong {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.new .new-slide .new-slider .item ul li p {
+    margin-top: 12px;
+    color: #464646;
+}
+
+/*----------------------------------*/
+@media (max-width : 1600px){
+    .new .new-slide .new-slider .item ul li {
+        width: 200px;
+        height:350px;
+    }
+    .new .new-slide .new-slider .item ul li img {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 7px;
+    }
+}
+/*---------------------------------*/
+@media (max-width : 1380px) {
+    .today-book .inner {
+        padding: 75px 160px 95px;
+    }
+
+    .today-book .contents .box {
+        height: 330px;
+    }
+
+    .today-book .contents .box .text-area p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .today-book .contents .box .img-area div {
+        height: 200px;
+    }
+
+}
+
+/*-------------------------------*/
+@media(max-width : 1360px) {
+    .best-seller .ranking-box {
+        height: 520px;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+}
+
+/*------------------------------------------------*/
+
+@media (max-width : 768px){
+    .main {
+        width: 100%;
+    }
+        
+    .main section .inner {
+        padding: 20px 20px;
+    }
+    .main section .inner .title{
+        width: 100%;
+        height: 30px;
+    }
+    .main section .title strong {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .main .main-banner{
+        padding-top: 50px;
+    }
+    .main-banner .iconify{
+        width: 20px;
+        height: 20px;
+        top: 60%;
+    }
+    .main-banner .iconify.left {
+        left: 2vh;
+    }
+    .main-banner .iconify.right {
+        right: 2vh;
+    }
+    .main-banner .slider .slick-dots{
+        left: 19vw;
+        bottom: 2vh;
+    }
+    .main-banner .slider .slick-dots li{
+        width: 4px;
+        height: 4px;
+        margin-right: 5px;
+    }
+
+    .today-book {
+        display: none;
+    }
+    .main .sam-banner {
+        display: none;
+    }
+    .best-seller .title .tabmenu {
+        padding-right: 0;
+    }
+    .best-seller .title .tabmenu span {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .best-seller .btn-area{
+        display: none;
+    }
+
+    .best-seller .ranking-box {
+        width: auto;
+        height: 340px;
+        white-space: nowrap;
+        overflow: scroll hidden;
+        padding-bottom: 20px;
+    }
+    
+ /*--------------------------------------------------------*/
+    .best-seller .ranking-box .rank-slide .item {
+        width: 900px;
+        height: 320px;
+        justify-content: flex-start;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul {
+        width: 300px;
+        height: 320px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li {
+        justify-content: space-around;
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+       
+    .best-seller .ranking-box .rank-slide .item ul li em {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li img:nth-of-type(1) {
+        width: 50px;
+        height: 70px;
+        margin: 0 10px 0 15px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text strong {
+        font-size: 16px;
+    }
+    
+    .best-seller .ranking-box .rank-slide .item ul li .text p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+/*--------------------------------------------------------*/
+
+    
+    .new .new-slide .iconify{
+        display: none;
+    }
+    .new .new-slide .new-slider{
+        margin-top: 20px;
+        display: flex;
+        overflow: scroll hidden;
+    }
+    .new .new-slide .new-slider .item {
+        width: 1560px;
+        height: 250px;
+    }
+    .new .new-slide .new-slider .item ul{
+        width: 100%;
+    }
+    .new .new-slide .new-slider .item ul li{
+        width: 120px;
+        height: 225px;
+        text-align: left;
+        margin-right: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;     
+    }
+    .new .new-slide .new-slider .item ul li img{
+        width: 120px;
+        height: 180px;
+        display: block;
+    }
+    .new .new-slide .new-slider .item ul li strong{
+        font-size: 14px;
+        margin-top: 3px;
+        padding-left: 5px;
+    }
+    .new .new-slide .new-slider .item ul li p{
+        font-size: 12px;
+        margin-top:5px;
+        padding-left: 5px;
+    }
+    .new .new-slide .iconify{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+}

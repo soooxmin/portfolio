@@ -1,0 +1,579 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@font-face{
+    src: url(../font/NanumBarunGothic.ttf);
+    font-weight: 300;
+    font-style: normal;
+    font-family: "NanumBarunGothic";
+}
+
+@font-face{
+    src: url(../font/NanumBarunGothicBold.ttf);
+    font-weight: 500;
+    font-style: normal;
+    font-family: "NanumBarunGothic";
+}
+
+@font-face{
+    src: url(../font/NanumBarunGothicLight.ttf);
+    font-weight: 200;
+    font-style: normal;
+    font-family: "NanumBarunGothic";
+}
+
+@font-face{
+    src: url(../font/NanumBarunGothicUltraLight.ttf);
+    font-weight: 100;
+    font-style: normal;
+    font-family: "NanumBarunGothic";
+}
+
+
+
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.1;
+    color: #222;
+    font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+button, input, select {
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+.layout {
+    width: 100%;
+    position: relative;
+    min-width: 1200px;
+    max-width: 1920px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+img{
+    font-size: 0;
+}
+em{
+    font-style: normal;
+}
+button{
+    cursor: pointer;
+}
+::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+
+/*바디 스크롤바*/
+body::-webkit-scrollbar {
+    width:10px;
+    height: 5px;
+    border-radius:5px;   
+}
+body::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+/*오버 플로우용 스크롤바*/
+::-webkit-scrollbar { width: 5px; height: 6px } /* 스크롤 바 */
+
+::-webkit-scrollbar-track { background-color:transparent; } /* 스크롤 바 밑의 배경 */
+
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 10px; } /* 실질적 스크롤 바 */
+
+::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+
+::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+
+
+
+
+
+.main .topbtn{
+    position: fixed;
+    bottom:2vh;
+    right: 2vw;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    padding:  10px 18px;
+    z-index: 100;
+    background: #fff url('https://api.iconify.design/bi/arrow-up.svg?color=%23777&width=12&height=12') no-repeat center center / 15px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.header{
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    height: 80px;
+}
+.inner-header{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header .logo{
+    padding-top: 10px;
+    margin-right: 90px;
+    float: left;
+}
+.header .logo a img{
+    height: 60px;
+    vertical-align: middle;
+}
+
+.header .gnb{
+    width: 553px;
+    height: 30px;
+    margin-right: 247px;
+    padding-top: 45px;
+    float: left;
+ 
+}
+.header .gnb ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header .gnb ul li{
+    margin-right: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+.header .gnb ul li:last-chid{
+    margin-right: 0;
+}
+.header .gnb ul li::after{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #7A92FC;
+    transition: 0.3s;
+}
+.header .gnb ul li:hover::after{
+    left: 0;
+    width: 100%;
+}
+.header .gnb ul li a{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.header .mobile-gnb {
+    display: none;
+    float: right;
+    padding-top: 15px;
+}
+
+.header .mobile-gnb .trigger {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 20px;
+    z-index: 300;
+    transition: 0.5s;
+}
+
+.header .mobile-gnb .trigger span {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+    transition: 0.3s;
+}
+
+.header .mobile-gnb .trigger span:nth-child(1) {
+    top: 0;
+}
+
+.header .mobile-gnb .trigger span:nth-child(2) {
+    top: 50%;
+}
+
+.header .mobile-gnb .trigger span:nth-child(3) {
+    top: 100%;
+}
+
+.header .mobile-gnb .trigger.on span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.header .mobile-gnb .trigger.on span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .mobile-gnb .trigger.on span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.header .mobile-gnb ul {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    z-index: 50;
+}
+
+.header .mobile-gnb ul li {
+    height: 25px;
+    border-bottom: 1px solid rgba(177, 171, 171, 0.2);
+    transition: 0.3s;
+}
+
+.header .mobile-gnb ul li:hover {
+    background-color: #2b2b2b;
+}
+
+.header .mobile-gnb ul li:hover a {
+    color: white;
+}
+
+.header .mobile-gnb ul li a {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.header .search-box{
+    padding-top: 25px;
+    float: left;
+}
+.header .search-box input{
+    padding: 0;
+    padding-left: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 300px; 
+    height: 40px;
+    background: #eee url('https://api.iconify.design/akar-icons/search.svg') no-repeat left 5% center / 20px 20px;
+}
+.header .search-box input:focus{
+    box-shadow: 0 0 5px rgba(122,146,252,0.5);
+    background-color: #fff;
+}
+
+.header .icon-box{
+    display: flex;
+    margin-left: 18px;
+    padding-top: 30px;
+    float: left;
+}
+.header .icon-box li{
+    margin-right: 15px;
+}
+.header .icon-box li:nth-child(4){
+    margin-right: 0;
+}
+.header .icon-box a .iconify{
+    height: 30px;
+    width: 30px;
+}
+.header .icon-box li:hover a .iconify{
+    color: #7A92FC;
+}
+
+
+.footer {
+    border-top: 4px solid #003477;
+}
+.footer .top {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 160px;
+    background-color: #F2F5FF;
+}
+.footer .top .box {
+    display: flex;
+}
+.footer .top .box div {
+    margin-right: 80px;
+    display: flex;
+    cursor: pointer;
+}
+
+.footer .top .box div .iconify {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.footer .top .box div strong {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.footer .top .sns-area {
+    display: flex;
+}
+
+.footer .top .sns-area li {
+    margin-right: 8px;
+}
+
+.footer .top .sns-area li:last-child {
+    margin-right: 0;
+}
+
+.footer .top .sns-area li a {}
+
+.footer .top .sns-area li a .iconify {
+    width: 18px;
+    height: 18px;
+    color: #222;
+}
+
+.footer .top .sns-area li a img {
+    width: 18px;
+}
+
+.footer .inner{
+    width:100%;
+    padding: 10px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .left{}
+
+.footer .left .box1{
+    margin: 27px 0 20px;
+}
+.footer .left .box1 img{
+    width: 130px;
+}
+.footer .left .box1 ul{
+    display: flex;
+    margin-top: 20px;
+}
+.footer .left .box1 ul li{}
+.footer .left .box1 ul li a{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+}
+.footer .left .box1 ul li a::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #222;
+    margin: 0 10px 0 8px;
+}
+.footer .left .box1 ul li:last-child a::after{
+    display: none;
+}
+
+.footer .left .box2{}
+.footer .left .box2 span{
+    display: none;
+}
+.footer .left .box2 ul{
+    width: 100%;
+}
+.footer .left .box2 ul li{
+    margin-bottom: 8px;
+}
+.footer .left .box2 ul li:last-child{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/*-------------------------------*/
+
+
+
+@media(max-width : 1500px){
+    .header .gnb{
+        margin-right: 150px;
+    }
+    .header .search-box {
+        display: none;
+    }
+}
+
+
+@media (max-width : 768px) {
+
+    .layout{
+        max-width: 768px;
+        min-width: 350px;
+    }
+
+    .main .topbtn{
+        padding:  10px 18px;
+        background: #fff url('https://api.iconify.design/bi/arrow-up.svg?color=%23777&width=12&height=12') no-repeat center center / 15px 15px;
+    }
+
+    .header{
+        height: 50px;
+    }
+    .inner-header{
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .header .logo{
+        padding-top: 5px;
+        vertical-align: middle;
+        float: left;
+    }
+    .header .logo a img{
+        height: 30px;
+    }
+    .header .gnb{
+        display: none;
+    }
+    .header .mobile-gnb {
+        display: block;
+    }
+    .header .search-box{
+        display: none;
+    }
+    .header .icon-box{
+        display: none;
+    }
+    
+    .footer {
+        border-top: 2px solid #003477;
+    }
+    
+    .footer .top {
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .footer .top .box {
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+    .footer .top .box > div {
+        margin-right:5px;
+    }    
+    .footer .top .box div .iconify {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        float: left;
+    }
+    .footer .top .box div strong {
+        font-weight: 700;
+        margin-left: 5px;
+        float: left;
+    }
+    .footer .top .sns-area {}
+    
+    .footer .top .sns-area li {
+        margin-right: 8px;
+    }
+    
+    .footer .right .sns-area li:last-child {
+        margin-right: 0;
+    }
+    
+    .footer .top .sns-area li a {}
+    
+    .footer .top .sns-area li a .iconify {
+        width: 18px;
+        height: 18px;
+        color: #222;
+    }
+    
+    .footer .top .sns-area li a img {
+       width: 18px;
+    }
+   
+    .footer .inner{
+        width: 100%;
+        padding: 20px 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }    
+    .footer .left .box1{
+        margin:0;
+        font-size: 12px;
+    }
+    .footer .left .box1 img{
+       display: none;
+    }
+    .footer .left .box1 ul{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content:flex-start;
+        align-items: flex-start;
+        height: 60px;
+        margin-top:20px;
+    }
+    .footer .left .box1 ul li{
+        margin-right: 0;
+    }
+    .footer .left .box1 ul li a::after{
+        margin: 0 8px;
+        vertical-align: middle;
+        height: 10px;
+    }
+    
+    .footer .left .box2{
+        font-size: 12px;
+    }
+    .footer .left .box2 span{
+        display: block;
+        background: url('https://api.iconify.design/fa-solid/angle-down.svg?color=%23777&width=12&height=12') no-repeat center center / contain;
+    }
+    .footer .left .box2 ul{
+        margin-top: 8px;
+        display: none;
+    }
+    .footer .left .box2 ul li{
+        margin-bottom: 4px;
+    }
+    .footer .left .box2 ul li:last-child{
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

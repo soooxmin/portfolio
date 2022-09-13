@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교보-장바구니</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/cart-style.css">
+    <link rel="stylesheet" href="css/common-style.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <header class="header">
+            <div class="inner-header">
+                <h1 class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </h1>
+        
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="normalbook-index.html">일반도서</a></li>
+                        <li><a href="romace-index.html">로맨스</a></li>
+                        <li><a href="fantasy-index.html">판타지</a></li>
+                        <li><a href="comic-index.html">코믹스</a></li>
+                        <li><a href="audio-index.html">오디오북</a></li>
+                        <li><a href="sam-main-index.html">sam</a></li>
+                        <li><a href="scholar-index.html">학술논문</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="mobile-gnb">
+        
+                    <div class="trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+        
+                    <ul>
+                        <li><a href="normalbook-index.html">일반도서</a></li>
+                        <li><a href="romace-index.html">로맨스</a></li>
+                        <li><a href="fantasy-index.html">판타지</a></li>
+                        <li><a href="comic-index.html">코믹스</a></li>
+                        <li><a href="audio-index.html">오디오북</a></li>
+                        <li><a href="sam-main-index.html">sam</a></li>
+                        <li><a href="scholar-index.html">학술논문</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="search-box">
+                    <input type="search">
+                </div>
+        
+                <ul class="icon-box">
+                    <li>
+                        <a href="login-index.html">
+                            <span class="iconify" data-icon="bi:person"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login-index.html">
+                            <span class="iconify" data-icon="ph:books"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart-index.html">
+                            <span class="iconify" data-icon="ant-design:shopping-outlined"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login-index.html">
+                            <span class="iconify" data-icon="bx:coin-stack"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="title">
+                <h2>장바구니</h2>
+            </section>
+
+            <section class="cart">
+                <div class="inner">
+                    <section class="cartlist">
+                        <div class="inner">
+                            <div class="chk-all">
+                                <input type="checkbox" id="chk-all" checked>
+                                <label for="chk-all">전체선택</label>
+                            </div>
+                            <ul>
+                                <li class="item item1">
+                                    <input type="checkbox" id="chk chk1" checked>
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="images/일반도서/책/x480D201030420.jpg" alt="">
+                                        </div>
+                                        <div class="product">
+                                            <strong>어떤 화가의 하루</strong>
+                                            <div class="prod-price">
+                                                <strong class="price">1,000</strong>원
+                                            </div>
+                                        </div>
+                                        <div class="countBox">
+                                            <input type="button" class="down" value="-">
+                                            <input type="text" class="number" value="1">
+                                            <input type="button" class="up" value="+">
+                                        </div>
+                                        <div class="amountPrice">
+                                            <strong class="amPrice amPrice1"></strong>원
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item item2">
+                                    <input type="checkbox" id="chk chk2" checked>
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="images/일반도서/책/x9788937473364.jpg" alt="">
+                                        </div>
+                                        <div class="product">
+                                            <strong>고독사 워크숍</strong>
+                                            <div class="prod-price">
+                                                <strong class="price">10,500</strong>원
+                                            </div>
+                                        </div>
+                                        <div class="countBox">
+                                            <input type="button" class="down" value="-">
+                                            <input type="text" class="number" value="1">
+                                            <input type="button" class="up" value="+">
+                                        </div>
+                                        <div class="amountPrice">
+                                            <strong class="amPrice amPrice2"></strong>원
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item item3">
+                                    <input type="checkbox" id="chk chk3" checked> 
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="images/일반도서/책/x9791191043754.jpg" alt="">
+                                        </div>
+                                        <div class="product">
+                                            <strong>세상의 마지막 기차역</strong>
+                                            <div class="prod-price">
+                                                <strong class="price">9,800</strong>원
+                                            </div>
+                                        </div>
+                                        <div class="countBox">
+                                            <input type="button" class="down" value="-">
+                                            <input type="text" class="number" value="1">
+                                            <input type="button" class="up" value="+">
+                                        </div>
+                                        <div class="amountPrice">
+                                            <strong class="amPrice amPrice3"></strong>원
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                
+                    <section class="total-cart">
+                        <div class="inner">
+                            <div class="title">
+                                <h3>결제정보</h3>
+                            </div>
+                            <div class="calc-area">
+                                <div class="inner">
+                                    <div>
+                                        <p>상품수</p><span><strong class="counting"></strong>개</span>
+                                    </div>
+                                    <div>
+                                        <p>상품금액</p><span><strong class="item-price"></strong>원</span>
+                                    </div>
+                                    <div>
+                                        <p>할인금액</p><span>-<strong class="sale-price"></strong>원</span>
+                                    </div>
+                                    <div>
+                                        <p>배송비</p><span>+<strong class="deli-price">0</strong>원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="totalPrice-sum">
+                                <div>
+                                    <p>총 결제금액</p><span><strong class="totalPrice"></strong>원</span>
+                                </div>
+                            </div>
+                            <button>구매하기</button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="top">
+                <div class="box">
+                    <div>
+                        <span class="iconify" data-icon="ri:customer-service-2-fill"></span>
+                        <strong>고객센터</strong>
+                    </div>
+                    <div>
+                        <span class="iconify" data-icon="icon-park-outline:speaker-one"></span>
+                        <strong>공지사항</strong>
+                    </div>
+                </div>
+        
+                <ul class="sns-area">
+                    <li><a href="#"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+                    <li><a href="#"><span class="iconify" data-icon="fa-brands:twitter-square"></span></a></li>
+                    <li><a href="#"><span class="iconify" data-icon="brandico:facebook-rect"></span></a></li>
+                    <li><a href="#"><img src="images/네이버블로그.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="inner">
+                <div class="left">
+        
+                    <div class="box1">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">협력사</a></li>
+                            <li><a href="#">제휴•제안</a></li>
+                            <li><a href="#">광고센터</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">서비스 전체보기</a></li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <span>교보eBook(주) 사업자 정보</span>
+                        <ul>
+                            <li>(주) 교보문고 서울시 종로구 종로 1 대표이사 : 안병헌</li>
+                            <li>사업자등록번호 : 102-81-11670</li>
+                            <li>대표전화 : 1544-1900 (발신자부담전화) 팩스 : 0502-987-5711(지역번호공통)</li>
+                            <li>서울특별시 통신판매업신고번호 : 제 653호 <a href="#">▶사업자정보확인</a></li>
+                            <li>COPYRIGHTⓒ KYOBO BOOK CENTER ALL RIGHT RESERVED.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

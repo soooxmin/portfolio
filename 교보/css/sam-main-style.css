@@ -1,0 +1,245 @@
+
+
+.main .sam-main{
+    position: relative;
+    width: 100%;
+    height: 785px;
+    background:linear-gradient(to right,#19B5C1,#9C77E4) ;
+}
+
+.main .sam-main .title{
+    position: absolute;
+    top: 255px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    line-height: 40px;
+}
+.main .sam-main .title h3{
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.main .sam-main .title p{
+    font-weight: 700;
+    vertical-align: middle;
+}
+.main .sam-main .title p img{
+    height: 40px;
+    margin-left: 10px;
+    font-size: 0;
+
+}
+.main .sam-main .book-ani{
+    position: absolute;
+    width: 4840px;
+    height: 250px;
+    bottom: 17px;
+    background-image: url(../images/sam-ani.png);
+    background-repeat: repeat-x;
+    background-size: 2420px 250px;
+    animation : slide 30s linear infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+
+}
+
+.main .sam-desc{
+    background-color: #eee;
+    overflow: hidden;
+}
+.sam-desc .inner{
+    padding: 90px 200px 0;
+}
+.sam-desc .title{}
+.sam-desc .title em{
+    font-size: 24px;
+    color: #929292;
+}
+.sam-desc .title p{
+    font-size: 30px;
+    font-weight: 700;
+    color: #003477;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.sam-desc .title p img{
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.sam-desc .wrap{
+    margin-top: 64px;
+    width:100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+}
+.sam-desc .wrap .basic,
+.sam-desc .wrap .infinite{
+    width: 45%;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    font-family: "NanumBarunGothic",sans-serif;
+    padding: 84px 52px 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.sam-desc .wrap .basic:hover,
+.sam-desc .wrap .infinite:hover{
+    transform: translateY(-20px);
+}
+.sam-desc .wrap .basic .iconify,
+.sam-desc .wrap .infinite .iconify{
+    font-size: 30px;
+    opacity: 0.8;
+    animation: pointer 2s infinite;
+}
+@keyframes pointer {
+    0%{
+        transform: translate(-5px,-5px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+.sam-desc .wrap .basic strong,
+.sam-desc .wrap .infinite strong{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sam-desc .wrap .basic .horizen-line,
+.sam-desc .wrap .infinite .horizen-line{
+    width: 100%;
+    height: 1px;
+    background-color:rgba(217,217,217,0.6);
+    margin: 70px 0 23px;
+}
+
+.sam-desc .wrap .basic a,
+.sam-desc .wrap .infinite a{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 28px;
+}
+
+.sam-desc .wrap .basic a{background: linear-gradient( to right, #0EBBBB, #4BBF7B);}
+
+.sam-desc .wrap .infinite a{background: linear-gradient( to right, #D686E3,#9A76E4);}
+
+.sam-desc .wrap .basic a:hover,
+.sam-desc .wrap .infinite a:hover{
+    background: #5668AE;
+}
+
+@media (max-width : 1400px){
+    .sam-desc .wrap .basic .horizen-line,
+    .sam-desc .wrap .infinite .horizen-line{
+        margin: 30px 0 10px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .main {
+        width: 100%;
+    }
+    .main .sam-main{
+        height:55vh;
+    }
+    .main .sam-main .title{
+        top: 150px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .main .sam-main .title h3{
+        margin-bottom: 7px;
+    }
+    .main .sam-main .title p{
+        font-size: 16px;
+        width: 220px;
+        margin: 0 auto;
+    }
+    .main .sam-main .title p img{
+        display: inline-block;
+        height: 14px;
+        margin-top: 5px;
+        font-size: 0; 
+    }
+    .main .sam-main .book-ani{
+        bottom: 20px;
+        width: 1936px;
+        height: 100px;
+        height: 100px;
+        background-size: 968px 100px;
+    }
+    .sam-desc .inner{
+        padding: 20px 20px 0;
+    }
+    .sam-desc .title{
+        text-align: center;
+    }
+    .sam-desc .title em{
+        font-size: 16px;
+    }
+    .sam-desc .title p{
+        font-size: 20px;
+    }
+    .sam-desc .title p img{
+        height: 20px;
+        vertical-align: middle;
+    }
+
+    .sam-desc .wrap{
+        height: 180px;
+    }
+    .sam-desc .wrap .basic,
+    .sam-desc .wrap .infinite{
+        height: 200px;
+        padding: 30px 20px 0;
+    }
+    .sam-desc .wrap .basic strong,
+    .sam-desc .wrap .infinite strong{
+        font-size: 16px;
+    }
+    .sam-desc .wrap .basic .horizen-line,
+    .sam-desc .wrap .infinite .horizen-line{
+        margin: 10px 0 10px;
+    }
+    .sam-desc .wrap .basic a,
+    .sam-desc .wrap .infinite a{
+        font-size: 14px;
+        font-weight: 300;
+        padding: 7px 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

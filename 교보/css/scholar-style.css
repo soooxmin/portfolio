@@ -1,0 +1,425 @@
+/* body{background-color: lightblue;} */
+
+/*title*/
+.title{
+    width: 1500px;
+    height: 60px;
+    margin: 20px auto 0;
+    padding-left: 30px;
+}
+.title strong{
+    font-size: 26px;
+    font-weight: 700;
+    color: #003477;
+    line-height: 60px;
+}
+
+.main{
+    padding-top: 70px;
+}
+
+/*searching*/
+.searching{
+    position: relative;
+    width: 1600px;
+    height: 395px;
+    margin: 0 auto;
+    background: url(../images/scholar-bg.jpg) no-repeat center/ cover;
+}
+.searching::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.searching .sub-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 96px;
+    background: #3075DD;
+}
+.searching .sub-header .inner{
+    padding: 30px 120px;
+    display: flex;
+    align-items: center;
+}
+.searching .sub-header .sub-logo{
+    margin-right: 50px;
+}
+.searching .sub-header .sub-logo img{
+    width: 225px;
+    /* height: 36px; */
+}
+.searching .sub-header .sub-gnb{}
+.searching .sub-header .sub-gnb ul{
+    display: flex;
+}
+.searching .sub-header .sub-gnb ul li{
+    position: relative;
+    margin-left: 40px;
+}
+.searching .sub-header .sub-gnb ul li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.searching .sub-header .sub-gnb ul li:hover::after{
+    left: 0;
+    width: 100%;
+}
+.searching .sub-header .sub-gnb ul li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.searching .search{
+    position: absolute;
+    left: 50%;
+    bottom:-100px;
+    transform: translateX(-50%);
+    width: 1500px;
+    height: 200px;
+    background:#fff;
+    border-radius: 20px;
+}
+.searching .search .inner{ 
+    padding: 55px 75px;
+    box-sizing: border-box;
+}
+.searching .search .select-box{ 
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #3075DD;
+    border-radius: 10px;
+}
+.searching .search .select-box div{
+    width: 190px;
+    height: 70px;
+    color: #fff;
+    font-size: 20px;    
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    vertical-align: middle;
+    line-height: 70px;
+    z-index: 40;
+    background: #3075DD url('https://api.iconify.design/pepicons/angle-down.svg?color=white') no-repeat right center / 20px;
+}
+.searching .search .select-box div:hover {
+    border-radius: 20px 0 0 0;
+}
+.searching .search .select-box div .field{ 
+    display: none;
+    transition: 0.3s;
+}
+.searching .search .select-box div:hover .field{
+    display: block;
+}
+.searching .search .select-box div .field li{
+    width: 190px;
+    height: 38px;
+    background-color: #3075DD;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 38px;
+    border-bottom: 1px solid rgba(215,215,215,0.3);
+    transition: 0.3s;
+ }
+ .searching .search .select-box div .field li:hover{
+	background: #2b2b2b;
+	transform: translateX(-5px);
+ }
+
+
+.searching .search .select-box input{
+    width: 1160px;
+    height: 70px;
+    background-color: #3075DD;
+    border-radius: 0 20px 20px 0;
+    padding: 0;
+    padding-left: 100px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-image: url('https://api.iconify.design/akar-icons/search.svg?color=white');
+    background-repeat: no-repeat;
+    background-position: right 50px center;
+    background-size: 30px;
+}
+.searching .search input::placeholder{
+    color: #fff;
+}
+.searching .search input:focus::placeholder{
+    color: transparent;
+}
+
+/*popular*/
+.main .popular{
+    margin: 130px auto 80px;
+}
+.popular .inner{
+    padding: 20px 0;
+}
+.popular .title{
+    height: 70px;
+}
+.popular .title strong{
+    color: #222;
+    font-size: 24px;
+}
+.popular .subject{
+    width: 1490px;
+    margin: 20px auto 0;
+} 
+.popular .subject span{
+    display: inline-block;
+    font-family: "NanumBarunGothic",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #eee;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.popular .subject span:hover{
+    background-color: #5668AE;
+    color: #fff;
+}
+
+
+/*best*/
+.main .best{
+    background-color: #EEEEEE;
+}
+.best .inner{
+    padding: 30px 70px;
+}
+.best .title{}
+.best .title strong{
+    color: #222;
+    font-size: 24px;
+}
+.best .wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    height: 246px;
+    margin: 40px auto 0;
+    font-family: "NanumBarunGothic",sans-serif;
+    font-size: 20px;
+}
+.best .wrap .item{
+    width: 320px;
+    height: 246px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+.best .wrap .item strong{
+    font-weight: 300;
+}
+.best .wrap .item h4{
+    font-weight: 500;
+    margin: 30px 0;
+    line-height: 1.4;
+}
+.best .wrap .item p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.best .wrap .item p:nth-of-type(1){
+    margin-bottom: 7px;
+}
+
+/*---------------------------------------*/
+
+@media (max-width : 1600px){
+    .searching{
+        width: 1200px;
+    }  
+    .searching .search{
+        width: 1000px;
+    }
+    .searching .search .select-box div{
+        width: 150px;
+    }
+    .searching .search .select-box div .field li{
+        width: 150px;
+        padding-left: 10px;
+    }
+    .searching .search .select-box input{
+        width: 700px;
+    }
+    .main .popular{
+        width: 95%;
+        margin-top: 50px;
+    }
+    .popular .subject{
+        width: 80%;
+        font-size: 0;
+    }
+    .popular .subject span{
+        margin: 4px;
+    }
+    .best .inner {
+        padding: 30px 40px;
+    }
+    .best .wrap{
+        width: 90%;
+    }
+    .best .wrap .item{
+        width: 230px;
+    }
+}
+
+@media(max-width : 768px) {
+    .main{
+        padding-top: 50px;
+    }
+    .popular .title,
+    .title{
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .popular .title strong,
+    .title strong{
+        font-size: 20px;
+    }
+    .searching{
+        width: 100%;
+        height: 200px;
+    }
+    .searching .sub-header{ 
+        height: 50px;
+    }
+    .searching .sub-header .inner{
+        padding: 10px 20px;
+    }
+    .searching .sub-header .sub-logo{
+        margin-right: 20px;
+    }
+    .searching .sub-header .sub-logo img{
+        width: 100px;
+    }
+    .searching .sub-header .sub-gnb ul li{
+        margin-left: 10px;
+    }
+    .searching .sub-header .sub-gnb ul li a{
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    .searching .search{
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        background-color: transparent;
+    }
+    .searching .search .inner{
+        padding: 0;
+    }
+    .searching .search .select-box{
+        top: 70%;
+    }
+    .searching .search .select-box div{
+        width: 80px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .searching .search .select-box .field{}
+    .searching .search .select-box div .field li{
+        width: 80px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .searching .search .select-box input{
+        width: 60%;
+        height: 50px;
+        padding-left: 20px;
+        background-position: right 10px center;
+        background-size: 14px;
+    }
+    .searching .search input::placeholder{
+        color: transparent;
+    }
+    .main .popular{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .main .popular .title{
+        margin-top: 0;
+    }
+    .popular .title strong{
+       font-size: 20px;
+    }
+    .popular .subject{
+        margin-top: 0;
+    }
+    .popular .subject span{
+        font-size: 14px;
+        line-height: 2.8;
+        padding: 5px 20px;
+    }
+    .popular .inner {
+        padding: 20px 0;
+    }
+    .main .best {}
+    .main .best .title{
+        margin-top: 0;
+        /* margin: 0; */
+    }
+    .best .title strong{
+       font-size: 20px;
+    }
+    .best .title ~ div{
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+    .best .wrap{
+        margin-top: 0;
+        width: 850px;
+        font-size: 16px;
+    }
+    .best .wrap .item{
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
