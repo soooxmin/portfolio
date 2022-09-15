@@ -1,10 +1,7 @@
 $(function () {
     
-    //스크롤탑 변수, 이미지 주소 변수
+    //스크롤탑 변수
     let scrollTop;
-
-    let imgSrc_per = "../images/banner-perfume.png";
-    let imgSrc_wat = "../images/banner_watch.png";
 
     //마우스 호버할때 배너배경 바뀌게
     $(".watch").mouseenter(function () {    
