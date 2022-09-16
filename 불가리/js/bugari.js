@@ -1,4 +1,12 @@
 $(function () {
+
+    //팝업창 닫기
+    const $btn = $(".popup-wrap .btn-area .btn");
+    
+    $btn.click(function () {
+        $(".popup-wrap").css("display","none");
+        $(".layout").removeClass("active");
+    });
     
     //스크롤탑 변수
     let scrollTop;
