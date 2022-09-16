@@ -21,6 +21,14 @@ $(function () {
 
         afterLoad:function(origin,destination,direction) {
           if(destination.index === 1){
+            $(".slider .img-slider").addClass("active");
+            $(".slider .txt-area").addClass("active");
+          }else{
+            $(".slider .img-slider").removeClass("active");
+            $(".slider .txt-area").removeClass("active");
+          };
+          
+          if(destination.index === 2){
             $(".about .img-area").addClass("active");
             $(".about .txt-area").addClass("active");
             $(".about .skill").addClass("active");
@@ -28,14 +36,6 @@ $(function () {
             $(".about .img-area").removeClass("active");
             $(".about .txt-area").removeClass("active");
             $(".about .skill").removeClass("active");
-          };
-          
-          if(destination.index === 2){
-            $(".slider .img-slider").addClass("active");
-            $(".slider .txt-area").addClass("active");
-          }else{
-            $(".slider .img-slider").removeClass("active");
-            $(".slider .txt-area").removeClass("active");
           };
 
           if(destination.index === 3){

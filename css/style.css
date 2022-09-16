@@ -190,136 +190,6 @@ section{
 }
 
 
-/*about*/
-.about{}
-.about .wrap{
-    display: flex;
-    justify-content: center;
-    height: 650px;
-    margin: 0 auto;
-}
-.about .wrap .img-area{
-    width: 438px;
-    margin-right: 25px;
-    background: url(../images/about2.png) no-repeat;
-    background-position: right bottom 5%;
-    transform: translateX(-500px);
-    opacity: 0;
-    visibility: hidden;
-    transition: 1s;
-}
-.about .wrap .img-area.active{
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-}
-.about .wrap .img-area img{
-    width: 344px;
-    margin-top: 80px;
-}
-
-.about .wrap .txt-area{
-    position: relative;
-    width: 900px;
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 40px 117px;
-    box-sizing: border-box;
-    transform: translateX(500px);
-    opacity: 0;
-    visibility: hidden;
-    transition: 1s;
-    transition-delay: 0.2s;
-}
-.about .wrap .txt-area.active{
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-}
-.about .wrap .txt-area img{
-    position: absolute;
-    left: 817px;
-    top: -68px;
-}
-.about .wrap .txt-area .profile{
-    margin-bottom:35px;
-}
-.about .wrap .txt-area .skill h3,
-.about .wrap .txt-area .profile h3{
-    font-size: 24px;
-    font-weight: 400;
-}
-.about .wrap .txt-area .skill h3::after,
-.about .wrap .txt-area .profile h3::after{
-    content: "";
-    display: block;
-    width: 100px;
-    height: 4px;
-    background-color: #0062D6;
-    border-radius: 0 0 20px 0;
-}
-.about .wrap .txt-area .profile .contents{
-    font-size: 20px;
-    margin-top: 17px;
-}
-.about .wrap .txt-area .profile .contents p{
-    margin-bottom: 5px;
-}
-.about .wrap .txt-area .profile .contents p:last-child{
-    margin-bottom: 0;
-}
-.about .wrap .txt-area .skill{}
-
-.about .wrap .txt-area .skill .contents{
-    margin-top: 20px;
-}
-.about .wrap .txt-area .skill .contents .box{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.about .wrap .txt-area .skill .contents .box:last-child{
-    margin-bottom: 0;
-}
-.about .wrap .txt-area .skill .contents .box strong{
-    font-size: 18px;
-    font-weight: 400;
-    width: 108px;
-}
-.about .wrap .txt-area .skill .contents .box .gage-bar{
-    margin: 0 30px 0 27px;
-    width: 400px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #d9d9d9;
-}
-.about .wrap .txt-area .skill .contents .box .gage-bar::before{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 100%;
-    background: linear-gradient(to right, #4197FD,#F0FC65,#FFACF2);
-    border-radius: 3px;
-    transition: 0.8s;
-    transition-delay: 1s;
-}
-.about .wrap .txt-area .skill.active .contents .box:nth-child(1) .gage-bar::before,
-.about .wrap .txt-area .skill.active .contents .box:nth-child(2) .gage-bar::before{
-    width: 90%;
-}
-.about .wrap .txt-area .skill.active .contents .box:nth-child(3) .gage-bar::before,
-.about .wrap .txt-area .skill.active .contents .box:nth-child(7) .gage-bar::before{
-    width: 60%;
-}
-.about .wrap .txt-area .skill.active .contents .box:nth-child(4) .gage-bar::before,
-.about .wrap .txt-area .skill.active .contents .box:nth-child(5) .gage-bar::before,
-.about .wrap .txt-area .skill.active .contents .box:nth-child(6) .gage-bar::before{
-    width: 80%;
-}
-.about .wrap .txt-area .skill .contents .box p{
-    font-size: 18px;
-}
-
 
 /*portfolio*/
 .portfolio{}
@@ -481,6 +351,158 @@ section{
 .portfolio .slider .btn-area div.next {
     background-color: #323232;
     color: #fff;
+}
+
+/*about*/
+.about {}
+
+.about .wrap {
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.about .wrap .img-area {
+    width: 438px;
+    margin-right: 25px;
+    background: url(../images/about2.png) no-repeat;
+    background-position: right bottom 5%;
+    transform: translateX(-500px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.about .wrap .img-area.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.about .wrap .img-area img {
+    width: 344px;
+    margin-top: 80px;
+}
+
+.about .wrap .txt-area {
+    position: relative;
+    width: 900px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 117px;
+    box-sizing: border-box;
+    transform: translateX(500px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+.about .wrap .txt-area.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.about .wrap .txt-area img {
+    position: absolute;
+    left: 817px;
+    top: -68px;
+}
+
+.about .wrap .txt-area .profile {
+    margin-bottom: 35px;
+}
+
+.about .wrap .txt-area .skill h3,
+.about .wrap .txt-area .profile h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about .wrap .txt-area .skill h3::after,
+.about .wrap .txt-area .profile h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #0062D6;
+    border-radius: 0 0 20px 0;
+}
+
+.about .wrap .txt-area .profile .contents {
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+.about .wrap .txt-area .profile .contents p {
+    margin-bottom: 5px;
+}
+
+.about .wrap .txt-area .profile .contents p:last-child {
+    margin-bottom: 0;
+}
+
+.about .wrap .txt-area .skill {}
+
+.about .wrap .txt-area .skill .contents {
+    margin-top: 20px;
+}
+
+.about .wrap .txt-area .skill .contents .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.about .wrap .txt-area .skill .contents .box:last-child {
+    margin-bottom: 0;
+}
+
+.about .wrap .txt-area .skill .contents .box strong {
+    font-size: 18px;
+    font-weight: 400;
+    width: 108px;
+}
+
+.about .wrap .txt-area .skill .contents .box .gage-bar {
+    margin: 0 30px 0 27px;
+    width: 400px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #d9d9d9;
+}
+
+.about .wrap .txt-area .skill .contents .box .gage-bar::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #4197FD, #F0FC65, #FFACF2);
+    border-radius: 3px;
+    transition: 0.8s;
+    transition-delay: 1s;
+}
+
+.about .wrap .txt-area .skill.active .contents .box:nth-child(1) .gage-bar::before,
+.about .wrap .txt-area .skill.active .contents .box:nth-child(2) .gage-bar::before {
+    width: 90%;
+}
+
+.about .wrap .txt-area .skill.active .contents .box:nth-child(3) .gage-bar::before,
+.about .wrap .txt-area .skill.active .contents .box:nth-child(7) .gage-bar::before {
+    width: 60%;
+}
+
+.about .wrap .txt-area .skill.active .contents .box:nth-child(4) .gage-bar::before,
+.about .wrap .txt-area .skill.active .contents .box:nth-child(5) .gage-bar::before,
+.about .wrap .txt-area .skill.active .contents .box:nth-child(6) .gage-bar::before {
+    width: 80%;
+}
+
+.about .wrap .txt-area .skill .contents .box p {
+    font-size: 18px;
 }
 
 /*end*/
