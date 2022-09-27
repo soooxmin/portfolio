@@ -23,8 +23,6 @@ $(function () {
                     infinite: true,
                     dots: true,
                     arrows: true,
-                    prevArrow: $(".viewer .iconify.left"),
-                    nextArrow: $(".viewer .iconify.right"),
                 }
             }]
     });
@@ -53,8 +51,6 @@ $(function () {
                     infinite: true,
                     dots: false,
                     arrows: true,
-                    prevArrow: $(".free-book .iconify.leftbt"),
-                    nextArrow: $(".free-book .iconify.rightbt"),
                 }
             }]
     })

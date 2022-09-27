@@ -217,7 +217,7 @@
     bottom: 370px;
     width: 80px;
     height: 80px;
-    z-index: 30;
+    z-index: 9999;
     cursor: pointer;
 }
 .viewer .iconify.left{
@@ -517,6 +517,7 @@
     padding: 20px;
     margin-right: 16px;
     cursor: pointer;
+    z-index: 9999;
 }
 .free-book .text-area .btn-con .iconify:last-child{
     margin-right: 0;
